@@ -1,0 +1,82 @@
+@use './variables.scss' as *;
+
+
+.companyPolicyMainContainer{
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1rem;
+    
+    img{
+        display: block;
+        margin: 1rem auto;
+        max-width: 300px;
+    }
+    
+    .heading{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        line-height: 1.6;
+    }
+    
+
+    p{
+        font-size: 1.2rem;
+        word-spacing: 1px;
+        line-height: 1.6;
+    }
+    
+    
+    ul{
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        padding: 1rem;
+        // list-style: none;
+        h3{
+            
+            line-height: 1.6;
+        }
+        li{
+            span{
+                font-weight:700;
+            }
+            font-size: 1rem;
+            word-spacing: 1px;
+            line-height: 1.6;
+        }
+    }
+
+    .homeVisitorTipsMainContainer{
+        margin: 2rem 0;
+        padding-inline-start: 18px;
+    
+        h1{
+            font-size: 1.1renm;
+            text-align: start;
+            margin: 0;
+        }
+    
+        ul{
+            margin-top: 0;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0px;
+            padding: 0;
+            li{
+    
+                &::marker{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .underline{
+        height: 4px;
+        width: 20%;
+        background-color: $primary;
+        margin: 0 auto 1rem auto;
+        border-radius: 8px;
+    }
+}

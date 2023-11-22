@@ -1,0 +1,123 @@
+@use './variables.scss' as *;
+
+header{
+    max-width: $maxWidth;
+    margin: 0 auto;
+    nav{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:10px;
+        padding: 1rem 1.5rem;
+        height: 56px;
+        top:0;
+        width: 100%;
+        position: fixed;
+        z-index: 11;
+        background-color: $backgroundColor;
+        .logoContainer{
+            a{
+                display: flex;
+                align-items: center;
+            }
+            span{
+                font-weight: 600;
+                margin-left: 10px;
+                font-size: 0.7rem;
+                color: $primary;
+            }
+            
+            img{
+                width: 90px;
+                object-fit: cover;
+                margin-left: 10px;
+            }
+            
+            .companyImg{
+                margin-left: 0;
+                transform: scale(1);
+                opacity: 1;
+                animation: fade-out 4s  linear infinite;
+              }
+              @keyframes fade-in {
+                100% {
+                  transform: scale();
+                }
+              }
+              
+              @keyframes fade-out {
+                0% {
+                  transform: scale(0.70);
+                }
+                25%{
+                    transform: scale(0.9);
+                }
+                50%{
+                    transform: scale(1);
+                }
+                75%{
+                    transform: scale(0.90);
+                }
+                100% {
+                    transform: scale(0.70);
+                }
+              }
+        }
+
+        .headerSideContainer{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            p{
+                font-size: 16px;
+                cursor: pointer;
+                color: $primary;
+                font-weight: 500;
+            }
+
+            .iconsContainer{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+
+                svg{
+                    font-size: 1.2rem;
+                }
+                .hamburger{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+//Media Query for laptop
+
+@media screen and (min-width: 1023px) {
+
+    header {
+    
+            nav {
+                position: unset;
+                
+                .logoContainer {
+                    padding-top: 1rem;
+                    img {
+                        width: 120px;
+                        object-fit: cover;
+    
+                    }
+                }
+    
+                .headerSideContainer {
+                    .iconsContainer {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+}
