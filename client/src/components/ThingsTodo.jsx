@@ -1,11 +1,11 @@
 import React from 'react'
 import '../styles/homeBuffetOption.scss'
-import { homeBuffetOptions } from '../data'
+import { thingsTodo } from '../data'
 
 const Cards = () => {
     
     return  (
-        homeBuffetOptions.map((data) => {
+        thingsTodo.map((data) => {
             return <div className="card" key={data.id}>
                 <img src={data.image} alt="" />
                 <div className="content">
@@ -17,10 +17,11 @@ const Cards = () => {
     )
 }
 
-const HomeBuffetOption = () => {
+const ThingsTodo = () => {
   return (
     <section className='HomeBuffetOptionMainContainer'>
-        <h1>Buffet Options at Atmosphere 360</h1>
+        <h1>Things To Do Genting SkyWorlds Theme Park</h1>
+        <p>Genting SkyWorlds is a theme park for movie lovers. You can explore rides and attractions themed on popular movies and also have a fun time as there are multiple things to do at the theme park.</p>
         <div className="cardMainContainer">
             <Cards />
         </div>
@@ -28,4 +29,4 @@ const HomeBuffetOption = () => {
   )
 }
 
-export default HomeBuffetOption
+export default ThingsTodo

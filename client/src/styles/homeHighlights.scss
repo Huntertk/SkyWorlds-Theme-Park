@@ -10,10 +10,14 @@
         letter-spacing: 0px;
         margin: 1rem 0;
     }
+    p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 
     .cardMainContainer{
         display: grid;
-        grid-template-columns: repeat(6,350px);
+        grid-template-columns: repeat(9,350px);
         overflow-x: scroll;
         gap: 1.5rem;
         padding-bottom: 1rem;

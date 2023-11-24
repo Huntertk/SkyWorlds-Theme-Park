@@ -11,9 +11,13 @@
         margin: 1rem 0;
     }
 
+    p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
     .cardMainContainer {
         display: grid;
-        grid-template-columns: repeat(3,350px);
+        grid-template-columns: repeat(6,350px);
         overflow-x: scroll;
         gap: 1.5rem;
         padding-bottom: 1rem;
@@ -55,9 +59,7 @@
 
         .cardMainContainer {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
-            overflow-x: unset;
         }
     }
 }

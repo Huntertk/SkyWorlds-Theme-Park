@@ -19,7 +19,8 @@ const Cards = () => {
 const HomeHighlights = () => {
   return (
     <section className='HomeHighlightsMainContainer'>
-        <h1>Atmosphere 360 highlights</h1>
+        <h1>Zones Inside Genting SkyWorlds Theme Park</h1>
+        <p>Genting SkyWorlds theme park has 26 rides in nine zones. Each zone is inspired by either a beloved movie or an adventure theme.</p>
         <div className="cardMainContainer">
             <Cards />
         </div>

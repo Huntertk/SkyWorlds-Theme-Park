@@ -4,87 +4,73 @@ import imgSkyHigh from './assets/images/SkyHigh.avif'
 import lunchBuffet from './assets/images/LunchBuffet.avif'
 import dinnerBuffet from './assets/images/DinnerBuffet.avif'
 import teaBuffet from './assets/images/TeaBuffet.avif'
-import imgOne from './assets/images/IMGONE.jpg'
-import imgTwo from './assets/images/IMGTWO.jpg'
-import imgThree from './assets/images/IMGTHREE.jpg'
-import imgFour from './assets/images/IMGFOUR.jpg'
-import imgFive from './assets/images/IMGFIVE.jpg'
-import imgSix from './assets/images/IMGSIX.jpg'
-import imgSeven from './assets/images/IMGSEVEN.jpg'
-import imgEight from './assets/images/IMGEIGHT.jpg'
-import imgNine from './assets/images/IMGNINE.jpg'
 import imgTen from './assets/images/IMGTEN.jpg'
 import imgEleven from './assets/images/IMGELEVEN.jpg'
-import imgTwelve from './assets/images/IMGTWEVEL.jpg'
-import imgThirteen from './assets/images/IMGTHIRTEEN.jpg'
-import imgFourteen from './assets/images/IMGFOURTEEN.jpg'
 import imgFifteen from './assets/images/IMGFIFITEEN.jpg'
 
-export const navData = [
-    {
-        id:uuidv4(),
-        title:"About",
-        links:[
-            {
-                id: uuidv4(),
-                linkTitle:"Atmosphere 360",
-                link:"https://www.malaysia-tickets.com/atmosphere-360/about/?_gl=1*13ddckm*_ga*MjAwNTQ0Mzc1MC4xNjk2MzEzNzAw*_ga_Y45PC9R73C*MTY5NjMyMjc0MC4yLjEuMTY5NjMyMjkwNy42MC4wLjA."
-            },
-            {
-                id: uuidv4(),
-                linkTitle:"Buffets",
-                link:"https://www.malaysia-tickets.com/atmosphere-360/buffets/?_gl=1*199ham8*_ga*MjAwNTQ0Mzc1MC4xNjk2MzEzNzAw*_ga_Y45PC9R73C*MTY5NjMyMjc0MC4yLjEuMTY5NjMyMjkxMi41NS4wLjA."
-            },
-            {
-                id: uuidv4(),
-                linkTitle:"Plan your visits",
-                link:"https://www.malaysia-tickets.com/atmosphere-360/plan-your-visit/?_gl=1*1h09y37*_ga*MjAwNTQ0Mzc1MC4xNjk2MzEzNzAw*_ga_Y45PC9R73C*MTY5NjMyMjc0MC4yLjEuMTY5NjMyMjk1Ny4xMC4wLjA."
-            },
-        ]
-    },
+//First
 
-    {
-        id: uuidv4(),
-        title:"Kuala Lumpur Attractions",
-        links:[
-            {
-                id: uuidv4(),
-                linkTitle:"KL Tower Tickets",
-                link:"https://www.malaysia-tickets.com/menara-kl-tower-kuala-lumpur/?_gl=1*1f887i6*_ga*MjAwNTQ0Mzc1MC4xNjk2MzEzNzAw*_ga_Y45PC9R73C*MTY5NjMyNzI4Ny4zLjEuMTY5NjMyODg3MC42MC4wLjA."
-            },
-            {
-                id: uuidv4(),
-                linkTitle:"Sunway Lagoon Kuala Lumpur Tickets",
-                link:"https://www.malaysia-tickets.com/sunway-lagoon/?_gl=1*1g4y8xm*_ga*MjAwNTQ0Mzc1MC4xNjk2MzEzNzAw*_ga_Y45PC9R73C*MTY5NjMyNzI4Ny4zLjEuMTY5NjMyODkzNC42MC4wLjA."
-            },
-            {
-                id: uuidv4(),
-                linkTitle:"Petrons Twins Towers Tickets",
-                link:"https://www.malaysia-tickets.com/petronas-twin-towers/?_gl=1*1pxgl04*_ga*MjAwNTQ0Mzc1MC4xNjk2MzEzNzAw*_ga_Y45PC9R73C*MTY5NjMyNzI4Ny4zLjEuMTY5NjMyODk0My41MS4wLjA."
-            },
-            {
-                id: uuidv4(),
-                linkTitle:"Aquaria KLCC Tickets",
-                link:"https://www.aquarium-tickets.com/klcc-aquarium-tickets/?_gl=1*1hbbvj9*_ga*MjAwNTQ0Mzc1MC4xNjk2MzEzNzAw*_ga_Y45PC9R73C*MTY5NjMyNzI4Ny4zLjEuMTY5NjMyOTAzNC4yNS4wLjA."
-            },
-            {
-                id: uuidv4(),
-                linkTitle:"Getting SkyWorlds Tickets",
-                link:"https://www.malaysia-tickets.com/genting-skyworlds-theme-park/?_gl=1*by2oxf*_ga*MjAwNTQ0Mzc1MC4xNjk2MzEzNzAw*_ga_Y45PC9R73C*MTY5NjMyNzI4Ny4zLjEuMTY5NjMyOTA5NC40NC4wLjA."
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        title:"Themes",
-        links:[{
-             id: uuidv4(),
-            linkTitle:"KL Tower Mini Zoo Tickets",
-            link:" https://www.hop-on-hop-off-tickets.com/kuala-lumpur-bus-tours/?_gl=1*1ks3uo6*_ga*MjAwNTQ0Mzc1MC4xNjk2MzEzNzAw*_ga_Y45PC9R73C*MTY5NjMzMTMwOS40LjEuMTY5NjMzMTg2OC41MC4wLjA."
-           
-        }]
-    }
-]
+import outdoorThemeParkImgOne from './assets/images/outdoorThemeParkImgOne.avif'
+import outdoorThemeParkImgTwo from './assets/images/outdoorThemeParkImgTwo.avif'
+import outdoorThemeParkImgThree from './assets/images/outdoorThemeParkImgThree.avif'
+import outdoorThemeParkImgFour from './assets/images/outdoorThemeParkImgFour.avif'
+import outdoorThemeParkImgFive from './assets/images/outdoorThemeParkImgFive.avif'
+import outdoorThemeParkImgSix from './assets/images/outdoorThemeParkImgSix.avif'
+import outdoorThemeParkImgSeven from './assets/images/outdoorThemeParkImgSeven.avif'
+
+//Second
+import gentingAwanaskyWayImgOne from './assets/images/gentingAwanaskyWayImgOne.avif'
+import gentingAwanaskyWayImgTwo from './assets/images/gentingAwanaskyWayImgTwo.avif'
+import gentingAwanaskyWayImgThree from './assets/images/gentingAwanaskyWayImgThree.avif'
+import gentingAwanaskyWayImgFour from './assets/images/gentingAwanaskyWayImgFour.avif'
+import gentingAwanaskyWayImgFive from './assets/images/gentingAwanaskyWayImgFive.avif'
+import gentingAwanaskyWayImgSix from './assets/images/gentingAwanaskyWayImgSix.avif'
+import gentingAwanaskyWayImgSeven from './assets/images/gentingAwanaskyWayImgSeven.avif'
+import gentingAwanaskyWayImgEight from './assets/images/gentingAwanaskyWayImgEight.avif'
+import gentingAwanaskyWayImgNine from './assets/images/gentingAwanaskyWayImgNine.avif'
+import gentingAwanaskyWayImgTen from './assets/images/gentingAwanaskyWayImgTen.avif'
+
+//Third
+import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgOne from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgOne.avif'
+import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgTwo from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgTwo.avif'
+import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgThree from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgThree.avif'
+import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFour from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFour.avif'
+import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFive from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFive.avif'
+import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSix from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSix.avif'
+import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSeven from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSeven.avif'
+
+//Fourth
+import gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgOne from './assets/images/gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgOne.avif'
+import gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgTwo from './assets/images/gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgTwo.avif'
+import gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgThree from './assets/images/gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgThree.avif'
+import gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgFour from './assets/images/gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgFour.avif'
+
+//Fifth
+import gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgOne from './assets/images/gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgOne.avif'
+import gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgTwo from './assets/images/gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgTwo.avif'
+import gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgThree from './assets/images/gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgThree.avif'
+import gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgFour from './assets/images/gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgFour.avif'
+
+//Zones Inside Genting SkyWorlds Theme Park
+import studioPlazaImg from './assets/images/studioPlazaImg.avif'
+import eagleMountainImg from './assets/images/eagleMountainImg.avif'
+import centralParkImg from './assets/images/centralParkImg.avif'
+import andromedaBaseImg from './assets/images/andromedaBaseImg.avif'
+import libertyLaneImg from './assets/images/libertyLaneImg.avif'
+import robotsRevetTownImg from './assets/images/robotsRevetTownImg.avif'
+import rioImg from './assets/images/rioImg.avif'
+import epicImg from './assets/images/epicImg.avif'
+import iceAgeImg from './assets/images/iceAgeImg.avif'
+
+
+//Things To Do Genting SkyWorlds Theme Park
+import ridesAttractions from './assets/images/ridesAttractionsImg.avif'
+import themedAreas from './assets/images/themedAreasImg.avif'
+import gamesActivitiesImg from './assets/images/gamesActivitiesImg.avif'
+import restaurantsImg from './assets/images/restaurantsImg.avif'
+import storesImg from './assets/images/storesImg.avif'
+import photoBoothImg from './assets/images/photoBoothImg.avif'
+
 
 
 
@@ -92,245 +78,180 @@ export const cardData = [
     {
         id: uuidv4(),
         image:[
-            imgFour,
-            dinnerBuffet,
-            imgThree,
-            imgEight,
-            imgNine,
-            teaBuffet,
-            imgSeven,
+            outdoorThemeParkImgOne,
+            outdoorThemeParkImgTwo,
+            outdoorThemeParkImgThree,
+            outdoorThemeParkImgFour,
+            outdoorThemeParkImgFive,
+            outdoorThemeParkImgSix,
+            outdoorThemeParkImgSeven,
+
         ],
-        title:"Atmosphere 360 Revolving Restaurant - Dinner Buffet",
-        desc:"Make your special occasions more memorable by booking a window seat view and opting for the celebration setup, whole cake, and a flower bouquet.",
-        type:"dinner"
+        title:"Tickets to Genting SkyWorld Outdoor Theme Park",
+        desc:"Make your way to Genting SkyWorlds Theme, an exhilarating adventure spot that features 9 distinct themed worlds and houses 26 thrilling rides and attractions.",
+        type:"outdoorthemepark"
     },
     {
         id: uuidv4(),
         image:[
-            imgTwo,
-            lunchBuffet,
-            imgOne,
-            imgFive,
-            imgTen,
-            imgTwelve,
-            imgFifteen
+            gentingAwanaskyWayImgOne,
+            gentingAwanaskyWayImgTwo,
+            gentingAwanaskyWayImgThree,
+            gentingAwanaskyWayImgFour,
+            gentingAwanaskyWayImgFive,
+            gentingAwanaskyWayImgSix,
+            gentingAwanaskyWayImgSeven,
+            gentingAwanaskyWayImgEight,
+            gentingAwanaskyWayImgNine,
+            gentingAwanaskyWayImgTen,
 
         ],
-        title:"Atmosphere 360 Revolving Restaurant - Lunch Buffet",
-        desc:"Experience a memorable lunch 282 meters above the ground in the Kuala Lumpur Tower, Southeast Asia's tallest revolving restaurant.",
-        type:"lunch"
+        title:"Combo: Genting Awana SkyWay (One-way) + Skytropolis Indoor Theme Park Tickets",
+        desc:"Non-stop excitement awaits as you explore the Awana SkyWay and the Skytropolis Indoor Theme Park with this money-saver combo ticket."
     },
     {
         id: uuidv4(),
       image:[
-            imgFour,
-            dinnerBuffet,
-            imgThree,
-            imgEight,
-            imgNine,
-            teaBuffet,
-            imgSeven,
+        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgOne,
+        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgTwo,
+        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgThree,
+        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFour,
+        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFive,
+        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSix,
+        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSeven,
         ],
-        title:"Atmosphere 360 Revolving Restaurant - Hi Tea Buffet",
-        desc:"Look over the city of Kuala Lumpur from the observation deck at Atmosphere 360 as you enjoy a delicious Hi-Tea Buffet.",
-        type:"tea"
+        title:"Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
+        desc:"Experience thrill, adventure, family fun, and more with these budget-friendly combo tickets to Genting Skytropolis and Skyworlds Theme Park.",
+    },
+    {
+        id: uuidv4(),
+        image:[
+            gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgOne,
+            gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgTwo,
+            gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgThree,
+            gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgFour,
+        ],
+        title:"Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
+        desc:"Experience thrill, adventure, family fun, and more with these budget-friendly combo tickets to Genting Skytropolis and Skyworlds Theme Park.",
+    },
+    {
+        id: uuidv4(),
+        image:[
+            gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgOne,
+            gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgTwo,
+            gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgThree,
+            gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgFour
+        ],
+        title:"Combo: Genting Awana Skyway (One-way) + Skyworld Outdoor + Skytropolis Indoor Theme Park ",
+        desc:"Upgrade your Kuala Lumpur trip with this super saver combo that gives you access to the city’s top attractions.",
     },
     
 ]
 
 
 
-export const  bookTicketDetails = [
-    {
-        id: uuidv4(),
-        image: imgEleven,
-        title:"Dinner Buffet",
-        desc:[
-            "Savor the height of luxury at Atmosphere 360, Southeast Asia's highest-revolving restaurant, perched 282 meters in the sky.",
-
-            "Indulge in a delectable dinner buffet featuring unlimited main courses, soups, noodles, salads, desserts, fruits, and refreshing drinks.",
-            "Create unforgettable memories with a window seat view, celebration setup, whole cake, and a charming flower bouquet for your special occasions.",
-
-            "Delight your senses with exquisite panoramic views of Kuala Lumpur's entire cityscape from Menara Kuala Lumpur. ",
-
-            "Experience the magic of dining amidst the stars, surrounded by twinkling city lights and an ever-changing panorama."
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/media/images/494a311283de614a13510b0a82f1d6bd-Atmosphere%20360%209.jpg?auto=format&w=468.29999999999995&h=267.59999999999997&q=90&fit=crop&ar=7%3A4",
-
-        title:"Lunch Buffet",
-        desc:[
-            "Elevate your dining experience at Atmosphere 360, the enchanting revolving restaurant soaring 282 meters above Kuala Lumpur in the iconic KL Tower.",
-
-            "Savor a delectable buffet blending the best of Malaysian and international cuisines, while you're captivated by the ever-changing 360° panorama of the KL skyline.",
-
-            "Delight your taste buds with an array of tantalizing salads, soups, starters, mouthwatering main courses, and divine desserts.",
-
-            "Step into a celestial world as the starry fiber-optic ceiling lights create a spaceship-like ambiance, enhancing your dining adventure.",
-
-            "For an unparalleled view of KL city, including the Petronas Twin Towers, the National Mosque of Malaysia, and Bukit Nanas Forest, treat yourself to a window seat (surcharge applies) and relish in an unobstructed visual feast."
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/media/images/8d4180c4e399867bbd67cb9c51a0716b-KL%20Tower%20Atmosphere%20360%203.jpg?auto=format&w=468.29999999999995&h=267.59999999999997&q=90&fit=crop&ar=7%3A4",
-
-        title:"Hi-Tea Buffet",
-        desc:[
-            "Savor a delectable Hi-Tea Buffet while gazing at Kuala Lumpur from the observation deck at Atmosphere 360.",
-
-            "Embark on a gastronomic journey within a spaceship-themed revolving restaurant, where mouthwatering dishes await.",
-
-            "Indulge in premium Malay cuisine skillfully prepared by culinary experts, a delightful showcase of culinary prowess.",
-
-            "Elevate your experience with window seating (extra charge) for an unparalleled view and dining extravaganza.",
-
-            "Immerse yourself in a world of taste and sight, where Atmosphere 360 offers a fusion of flavors and captivating vistas."
-        ]
-    },
-]
 
 
 
 export const cardHighLightsDetails = [
     {
         id: uuidv4(),
-        image: imgSkyHigh,
-        title:"Sky-High Luxurious Buffet",
-        desc:"Delight in glorious Buffets while floating above Kuala Lumpur's skyline, savoring a symphony of flavors with breathtaking views."
+        image: studioPlazaImg,
+        title:"Studio Plaza",
+        desc:"Studio Plaza is a celebration of the cinema. You will come across your favorite movie characters as they are displayed in the Plaza, carved into the interiors. Explore the golden interiors, 360-degree Legends Cinema, diners, and retail stores to immerse yourself in a unique experience."
     },
     {
         id: uuidv4(),
-        image: imgFifteen,
-        title:"Revolving Enchantment",
-        desc:"Be mesmerized by the spaceship-themed décor as the restaurant gently revolves, creating an otherworldly ambiance like dining among the stars."
+        image: eagleMountainImg,
+        title:"Eagle Mountain",
+        desc:"Prepare for the rugged Californian desert in Eagle Mountain. Try the Mad Ramp Peak, the world's first dual-powered roller coaster bike ride, and enjoy the thrill of scary turns and big drops. If you want to complement your California vibes, buy a burger from Classic Burgers food truck."
     },  
     {
         id: uuidv4(),
-        image: imgCelestial,
-        title:"Celestial Culinary Artistry",
-        desc:"Indulge in a culinary masterpiece crafted by expert chefs, where Malay delicacies showcase a harmonious blend of tradition and innovation."
+        image: centralParkImg,
+        title:"Central Park",
+        desc:"Central Park is the most happening place in Genting SkyWorlds. Enjoy a Character Experience at the Night at the Museum: Midnight Mayhem; or take a trip to galactic skies at ESD Global Defender, or become a hero by saving the earth from alien invasion in Independence Day: Defiance."
     },  
     {
         id: uuidv4(),
-        image: imgTen,
-        title:"Window to Wonder",
-        desc:"Upgrade to window seating and unlock a dazzling perspective of the city, elevating your dining experience to unparalleled heights."
+        image: andromedaBaseImg,
+        title:"Andromeda Base",
+        desc:"At Andromeda Base, buckle up for a galactic voyage and use your survival skills to fight the forces lurking behind the shadows to leave the galaxy. Try the Boot Camp Training obstacle course, or face your fears at the upside-down spinner Alpha Fighters Pilots ride."
     },  
     {
         id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/media/images/2923e9ecc952c2070abf33010651e025-KL%20Tower%20Atmosphere%20360.jpg?auto=format&w=468.29999999999995&h=267.59999999999997&q=90&fit=crop&ar=7%3A4",
-        title:"Astral Elegance",
-        desc:"Admire the exquisite interior design that fuses modern sophistication with celestial charm, creating an atmosphere that is both enchanting and sophisticated."
+        image:libertyLaneImg,
+        title:"Liberty Lane",
+        desc:"Experience the Genting SkyWorlds exclusive Invasion of the Planet of the Apes at Liberty Lane. Get transported to San Francisco as you explore the stores, foods, and action from the Planet of the Apes movies."
+    },   
+    {
+        id: uuidv4(),
+        image: robotsRevetTownImg,
+        title:"Robots Revet Town",
+        desc:"Take your family to Robots Rivet Town to meet the robots. Also, get to create your own robots as you partner with inventors. Make sure to hop into Bigweld's Zeppelins or take a thrill ride on Rivet Town Roller."
     },  
     {
         id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/tour/37157/TOUR-IMAGE/cc059dcf-f140-40bf-bcd6-652d2304fa3f-19081-kuala-lumpur-atmosphere-360-revolving-restaurant---hi-tea-buffet-06.jpg?auto=format&w=468.29999999999995&h=267.59999999999997&q=90&fit=crop&ar=7%3A4",
-        title:"Celestial Events",
-        desc:"Experience unique celestial events with themed dining nights, creating unforgettable memories under the stars."
+        image: rioImg,
+        title:"Rio",
+        desc:"Slip into the ultimate fun at Rio and explore the neighborhood of Santa Teresa while listening to Samba music. Make sure to take a spin at the colorful Rio Carnival Chaos teacup ride."
+    },  
+    {
+        id: uuidv4(),
+        image: epicImg,
+        title:"Epic",
+        desc:"Step into the secret kingdom at Epic and Make a splash in the water as you tour the Moonhaven on Mub and Grub's boat ride. Enjoy the company of Nod, M.K, and Mandrake as you sail past the kingdom."
+    },  
+    {
+        id: uuidv4(),
+        image: iceAgeImg,
+        title:"Ice Age",
+        desc:"Reward yourself with a trip to the Ice Age and get to meet Sid at the Ice Age: Expedition Thin Ice. Make an adventurous journey through ice and lava, and enjoy big drops and steep climbs in the Acorn Adventure to chase a mystical acorn."
     },  
 ]
 
 
 
-export const homeBuffetOptions = [
+export const thingsTodo = [
     {
         id: uuidv4(),
-        title:"Lunch Buffet",
-        desc:"Indulge in a delectable array of culinary delights during the Lunch Buffet at Atmosphere 360, offering a diverse selection of dishes to satisfy your midday cravings.",
-        image: lunchBuffet
+        title:"Rides & Attractions",
+        desc:"Genting SkyWorlds has some thrilling rides inspired by your favorite movies. Visitors can meet characters from Ice Age, Epic, and Night at the Museum while flying high on rollercoasters and waterslides. With nine unique zones, Genting SkyWorld has multiple attractions and rides in each one of them, offering experiences that are one of a kind.",
+        image: ridesAttractions
     },
     {
         id: uuidv4(),
-        title:"Hi-Tea Buffet",
-        desc:"Treat yourself to an afternoon of delightful treats and savory bites at the Hi-Tea Buffet, where an assortment of sweet and savory delicacies awaits your palate.",
-        image: teaBuffet
+        title:"Themed Areas",
+        desc:"At Genting SkyWorlds, you can transport yourself from the colorful streets of Rio to the bustling cityscape of San Francisco in a matter of minutes. Experience the rugged terrain of the Californian desert at Eagle Mountain or step into the prehistoric times of the Ice Age as you explore the different zones of the theme park.",
+        image: themedAreas
     },
     {
         id: uuidv4(),
-        title:"Dinner Buffet",
-        desc:"Embark on a gastronomic journey during the Dinner Buffet, featuring an opulent spread of gourmet dishes amidst the enchanting ambiance of the revolving restaurant, creating a truly memorable dining experience.",
-        image: dinnerBuffet
+        title:"Games & Activities",
+        desc:"There are multiple games and activities lined up for you at the Genting SkyWorlds theme park. You can watch a stunning water fountain show at Lake of Dreams in Central Park, participate in the Sounds of Rio to immerse in the festival vibe or dance your heart out in the Samba Urbana.",
+        image: gamesActivitiesImg
+    },
+    {
+        id: uuidv4(),
+        title:"Restaurants",
+        desc:"Genting SkyWorlds Theme Park has multiple restaurants and food joints in each of its nine zones. Try the world-famous Fish & Chips from Harry Ramsden in Central Park, or go local and choose from a collection of the best local and Middle Eastern menus at Cosmic Cafe.",
+        image: restaurantsImg
+    },
+    {
+        id: uuidv4(),
+        title:"Stores",
+        desc:"Explore the stores in all Genting SkyWorlds Theme Park zones to buy movie merchandise, collectibles, and galactic objects. Shop for toys in every movie-inspired zone, or pose for photo memorabilia in a photo kiosk.",
+        image: storesImg
+    },
+    {
+        id: uuidv4(),
+        title:"Photo Booth",
+        desc:"Try out the Photo+ experience that offers stunning images using state-of-the-art facial recognition technology. You can capture your best reactions on rides or even ask for a slow-motion video to cherish the fun.",
+        image: photoBoothImg
     },
 ]
 
 
-
-export const homeVisitPlanData = [
-    {
-        id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/media/images/3fab810baf246f9c5cec7976f6f1372f-KL%20Tower%20Atmosphere%20360%205.jpg?auto=format&w=814.9333333333333&h=458.4&q=90&fit=crop&ar=16%3A9",
-        type:"timings",
-        details:[
-            "Operating Hours: 12 PM - 10 PM",
-            "Lunch: 2 PM",
-            "Hi-Tea: 5 PM",
-            "Dinner: 9 PM"
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/media/images/a3527012bc512e6f3787c29257582cdd-Atmosphere%20360%205.jpg?auto=format&w=814.9333333333333&h=458.4&q=90&fit=crop&ar=16%3A9",
-        type:"location",
-        details:[
-            "Address: Level 7 Unit, 1 Menara Goldstone Holiday Inn Express, No 84, Jalan Raja",
-            "Chulan, 50200, Kuala Lumpur, Malaysia.",
-            "By Metro: 3- LRT Ampang Line (Nearest Stop: Masjid Jamang)",
-            "By Bus: The Weld, Menara Hup Seng/ KL Tower (Timur) (Nearest Stop: Bukit Bitang)",
-            "By Car: Distance From Airport: 28.5 KM from Sultan Abdul Aziz Shah Airport (Subang Airport) (SZB) (Car Parking: Available)"
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/media/images/74a5945fe3eca393deb6fb05af0fbd5e-Atmosphere%20360.jpg?auto=format&w=814.9333333333333&h=458.4&q=90&fit=crop&ar=16%3A9",
-        type:"facilities",
-        details:[
-            "ATM: On-site ATM for easy access to cash.",
-            "Praying Room: A designated, peaceful space for prayer and meditation.",
-            "Toilet: Hygienic, well-maintained restrooms with essential amenities.",
-            "Parking Area: Spacious and secure parking to accommodate all vehicle sizes.",
-            "Hotel Drop-in/Drop-off: Convenient transportation available for selected hotels."
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/media/images/f250dec4f0fcff500dd8a4d63a94f3f1-Atmosphere%20360%202.jpg?auto=format&w=814.9333333333333&h=458.4&q=90&fit=crop&ar=16%3A9",
-        type:"dress",
-        details:[
-            "The dress code at Atmosphere 360 is smart casual.",
-            "Neat and presentable attire is recommended.",
-            "Sleeveless shirts and flip-flops are not permitted.",
-            "Gentlemen are advised to avoid wearing shorts and sandals.",
-            "Guests are encouraged to dress comfortably and elegantly for a delightful dining experience."
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/media/images/64c273cc09bf80adddfbf4cab3aef82d-Atmosphere%20360%203.jpg?auto=format&w=814.9333333333333&h=458.4&q=90&fit=crop&ar=16%3A9",
-        type:"accessibility",
-        details:[
-            "Atmosphere 360 is wheelchair accessible, providing ramps and elevators for easy mobility.",
-            "Accessible restrooms are available on the premises for visitors with disabilities.",
-            "Stroller accessible and infant seats are available on request.",
-            "Trained staff members are ready to offer assistance and support to those in need."
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:"https://cdn-imgix.headout.com/media/images/4462c42422cdf394163274f45c67403b-Atmosphere%20360%204.jpg?auto=format&w=814.9333333333333&h=458.4&q=90&fit=crop&ar=16%3A9",
-        type:"rules",
-        details:[
-            "Guests are required to adhere to the designated dress code of smart casual attire for a comfortable dining experience.",
-            "Smoking is strictly prohibited within the premises, ensuring a pleasant environment for all visitors.",
-            "Pets are not allowed inside Atmosphere 360, except for service animals assisting individuals with disabilities.",
-            "The use of drones or any unauthorized aerial devices is not permitted on the premises.",
-            "Visitors must follow staff instructions and maintain decorum to ensure a harmonious and enjoyable atmosphere for everyone."
-        ]
-    },
-   
-]
 
 
 

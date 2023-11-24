@@ -4,15 +4,12 @@ import {
     HomeTopContainer,
     HomeCardContainer,
     HomeWhyVisit,
-    HomWhatIsTheBest,
-    HomeTicketExplaination,
     HomeHighlights,
-    HomeBuffetOption,
-    HomeVisitPlan,
     HomeVisitorTips,
     HomeFaq,
     HomeMap
 } from '../components/index'
+import ThingsTodo from '../components/ThingsTodo'
 
 const Home = () => {
   return (
@@ -21,11 +18,9 @@ const Home = () => {
       <HomeTopContainer />
       <HomeCardContainer />
       <HomeWhyVisit />
-      <HomWhatIsTheBest />
-      {/* <HomeTicketExplaination /> */}
+      {/* <HomWhatIsTheBest /> */}
       <HomeHighlights />
-      <HomeBuffetOption />
-      {/* <HomeVisitPlan /> */}
+      <ThingsTodo />
       <HomeVisitorTips />
       <HomeMap />
       <HomeFaq />
