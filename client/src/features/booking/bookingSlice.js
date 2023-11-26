@@ -106,6 +106,10 @@ const bookingSlice = createSlice({
                 //Fourth
                 state.adultTotal = state.adultCount *  166
                 return
+            } else if(state.type === 'bookTypeFive'){
+                //Fifth
+                state.adultTotal = state.adultCount *  225
+                return
             }
             setBookingDetailsFromLocalStorage(state)
         },
@@ -134,7 +138,12 @@ const bookingSlice = createSlice({
                 //Fourth
                 state.childTotal = state.childCount *  136
                 return
+            } else if(state.type === 'bookTypeFive'){
+                //Fifth
+                state.childTotal = state.childCount *  200
+                return
             }
+
             setBookingDetailsFromLocalStorage(state)
         },
         seniorTotalAmount: (state) => {
@@ -161,6 +170,10 @@ const bookingSlice = createSlice({
             } else if(state.type === 'bookTypeFour'){
                 //Fourth
                 state.seniorTotal = state.seniorCount *  136
+                return
+            } else if(state.type === 'bookTypeFive'){
+                //Fifth
+                state.seniorTotal = state.seniorCount *  200
                 return
             }
             setBookingDetailsFromLocalStorage(state)
