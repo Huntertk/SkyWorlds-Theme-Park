@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/home.scss'
 import {
     HomeTopContainer,
@@ -10,8 +10,15 @@ import {
     HomeMap
 } from '../components/index'
 import ThingsTodo from '../components/ThingsTodo'
+import { initialRender } from '../features/booking/bookingSlice'
+import {useDispatch} from 'react-redux'
 
 const Home = () => {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(initialRender())
+  },[])
   return (
 
      <section className='homeMainContainer'>

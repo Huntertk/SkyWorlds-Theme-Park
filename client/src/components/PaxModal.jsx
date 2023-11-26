@@ -9,17 +9,14 @@ import {
     adultCountDecrease, 
     childCountIncrease, 
     childCountDecrease,
-    infantCountDecrease,
-    infantCountIncrease,
     seniorCountDecrease,
     seniorCountIncrease,
     adultTotalAmount,
     childTotalAmount,
-    infantTotalAmount,
     seniorTotalAmount,
     countTotalBookingAmount,
     cancelBooking,
-    closePaxModel
+    closePaxModel,
 } from '../features/booking/bookingSlice';
 
 
@@ -64,15 +61,15 @@ const PaxModal = ({selectedDate}) => {
     const {
         adultCount, 
         childCount, 
-        infantCount,
         seniorCount,
         adultTotal,
-        childTotal, 
-        infantTotal,
+        childTotal,
         seniorTotal,
         totalAmount,
         bookingDate,
-        type
+        type,
+        bookingTitle,
+        pref
     } = useSelector((store) => store.booking)
 
     const dispatch = useDispatch()
@@ -80,11 +77,10 @@ const PaxModal = ({selectedDate}) => {
     useEffect(() => {
         dispatch(adultTotalAmount())
         dispatch(childTotalAmount())
-        dispatch(infantTotalAmount())
         dispatch(seniorTotalAmount())
         dispatch(countTotalBookingAmount())
 
-    },[adultCount, childCount, seniorCount, infantCount])
+    },[adultCount, childCount, seniorCount])
     const navigate = useNavigate()
 
   return (
@@ -96,7 +92,8 @@ const PaxModal = ({selectedDate}) => {
                 return navigate("/")
             }}>Cancel</button>
         </div>
-        <p className='bookingType'>{type === 'dinner' ? "Dinner Buffet" : type === 'lunch' ? "Lunch Buffet": "Tea Buffet"}</p>
+        <p className='bookingType'>{bookingTitle}</p>
+        {pref && <p className='bookingType'>{pref}</p>}
         <h1>Select number of tickets</h1>
         <div className="paxSelector">
             <Pax  
@@ -120,17 +117,6 @@ const PaxModal = ({selectedDate}) => {
                 decrease: childCountDecrease
             }}
             total={childTotal}
-            />
-            <Pax  
-            category ={"Infant"} 
-            ageText={"2 to 5 yrs"} 
-            price={50} 
-            count={infantCount}
-            actionType={{
-                increase: infantCountIncrease,
-                decrease: infantCountDecrease
-            }}
-            total={infantTotal}
             />
             <Pax  
             category ={"Senior"} 

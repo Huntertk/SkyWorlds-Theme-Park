@@ -6,11 +6,14 @@
     margin: 4rem auto;
     min-height: 60vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     .bookingDateWrapper{
         padding: 1rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
         h1{
             font-size: 16px;
@@ -41,6 +44,12 @@
                     color: #000;
                     background-color: $primaryModalColor;
                  }
+
+                 &:disabled{
+                    background-color: #808080;
+                    cursor: not-allowed;
+                    color: #fff;
+                 }
             }
 
             .moreDates{
@@ -58,8 +67,15 @@
         .selectedDate{
 
             display: flex;
-            align-items: center;
+            // align-items: flex-start;
+            justify-content: space-around;
+            flex-direction: column;
+            text-align: start;
             gap: 20px;
+
+            .prefrenceAndDateContainer{
+                width: 90%;
+            }
 
             button{
                 color: #fff;

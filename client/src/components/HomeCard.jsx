@@ -7,7 +7,7 @@ import { DayPicker } from 'react-day-picker';
 import {BiSolidDollarCircle} from 'react-icons/bi'
 import { Link, useNavigate } from 'react-router-dom';
 import {useDispatch} from 'react-redux'
-import { choosingBooking } from '../features/booking/bookingSlice';
+import { choosingBooking, countTotalBookingAmount } from '../features/booking/bookingSlice';
 
 const Calender = ({id}) =>{
     const [selectedDate, setSelectedDate] = useState(false)
@@ -55,7 +55,7 @@ const Calender = ({id}) =>{
 
 
 const HomeCard = ({data}) => {
-    const {image, id, title, desc, type} = data;
+    const {image, id, title, desc, type, price} = data;
     const dispatch = useDispatch()
     const navigate = useNavigate()
   return (
@@ -67,11 +67,12 @@ const HomeCard = ({data}) => {
                 <h3>{title}</h3>
                 <p>{desc}</p>
                 <p>Next available : Tomorrow</p>
+                {/* <h4>MYR {price}</h4> */}
                 {/* <Calender id={id} /> */}
             </div>
             <div className="cardBtnContainer">
                 <button onClick={() => {
-                    dispatch(choosingBooking(type))
+                    dispatch(choosingBooking({type, title}))
                     return navigate("/date-confirm")
                 }} className='checkAvailability'>
                     Book Now

@@ -89,7 +89,9 @@ export const cardData = [
         ],
         title:"Tickets to Genting SkyWorld Outdoor Theme Park",
         desc:"Make your way to Genting SkyWorlds Theme, an exhilarating adventure spot that features 9 distinct themed worlds and houses 26 thrilling rides and attractions.",
-        type:"outdoorthemepark"
+        type:"bookTypeOne",
+        price: 151,
+
     },
     {
         id: uuidv4(),
@@ -107,7 +109,9 @@ export const cardData = [
 
         ],
         title:"Combo: Genting Awana SkyWay (One-way) + Skytropolis Indoor Theme Park Tickets",
-        desc:"Non-stop excitement awaits as you explore the Awana SkyWay and the Skytropolis Indoor Theme Park with this money-saver combo ticket."
+        desc:"Non-stop excitement awaits as you explore the Awana SkyWay and the Skytropolis Indoor Theme Park with this money-saver combo ticket.",
+        type:"bookTypeTwo",
+        price: 75
     },
     {
         id: uuidv4(),
@@ -122,6 +126,8 @@ export const cardData = [
         ],
         title:"Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
         desc:"Experience thrill, adventure, family fun, and more with these budget-friendly combo tickets to Genting Skytropolis and Skyworlds Theme Park.",
+        type:"bookTypeThree",
+        price: 215
     },
     {
         id: uuidv4(),
@@ -131,8 +137,10 @@ export const cardData = [
             gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgThree,
             gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgFour,
         ],
-        title:"Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
+        title:"Combo: Genting Awana SkyWay (One-way) + Skyworld Outdoor Theme Park Tickets",
         desc:"Experience thrill, adventure, family fun, and more with these budget-friendly combo tickets to Genting Skytropolis and Skyworlds Theme Park.",
+        type:"bookTypeFour",
+        price: 166
     },
     {
         id: uuidv4(),
@@ -144,6 +152,8 @@ export const cardData = [
         ],
         title:"Combo: Genting Awana Skyway (One-way) + Skyworld Outdoor + Skytropolis Indoor Theme Park ",
         desc:"Upgrade your Kuala Lumpur trip with this super saver combo that gives you access to the city’s top attractions.",
+        type:"bookTypeFive",
+        price: 225
     },
     
 ]
@@ -252,29 +262,74 @@ export const thingsTodo = [
 ]
 
 
+export const preferenceData = [
+    
+    {
+        id: uuidv4(),
+        title: "Combo: 1-Day Pass + Two-Way Standard Gondola Ride",
+        price: 171,
+        details:[
+            "Access to Genting Awana SkyWay standard gondola", 
+            "Two-way ride",
+            "1-day admission to Genting SkyWorlds Theme Park"
+        ]
+    },
+    {
+        id: uuidv4(),
+        title: "1-Day Pass",
+        price: 151,
+        details:["1-day admission to Genting SkyWorlds Theme Park"]
+    },
+    {
+        id: uuidv4(),
+        title: "1-Day Pass with Photo",
+        price: 179,
+        details:[
+            "Photo opportunity",
+            "1-day admission to Genting SkyWorlds Theme Park"
+        ]
+    },
+    {
+        id: uuidv4(),
+        title: "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
+        price: 215,
+        details:[
+            "Admission to Genting Skytropolis",
+            "Admission to Genting SkyWorlds",
+            "Complimentary up to 6 VQ reservations"
+        ]
+    }
+]
+
+
 
 
 
 export const homeFAQ = [
     {
         id: uuidv4(),
-        ques:"Should I make an advance reservation for Atmosphere 360?",
-        ans:"Highly Recommended, advance reservations are welcome to confirm your preferred dining slot."
+        ques:"Is it worth visiting Genting SkyWorlds Theme Park?",
+        ans:"Absolutely! Genting SkyWorlds has been described as 'top-notch entertainment' for several reasons. Its unique location (1800m above sea level!), wide assortment of 26 rides for both children and adults, and multiple food options makes it one of the most widely-visited amusement parks in Malaysia. Genting SkyWorlds has built an immersive park themed around popular movie franchises such as Ice Age, Planet of the Apes, Night at the Museum, and more!"
     },
     {
         id: uuidv4(),
-        ques:"How Can I request a window table at Atmosphere 360?",
-        ans:"Yes, you can request window Table during reservation/booking with extra charges."
+        ques:"Where can I get Genting SkyWorlds Theme Park tickets?",
+        ans:"You can opt to buy your tickets either at the physical ticket counter, or from a trusted online partner. Keep in mind due to the park's immense popularity, you can expect to long waiting lines at the ticket counter. For this, we recommend booking your tickets online in advance so as to avoid the lines and simply sail through with your confirmed e-ticket. An added benefit of booking your tickets online is that you enjoy exclusive discounts and offers."
     },
     {
         id: uuidv4(),
-        ques:"What is dress code for guest at Atmosphere 360?",
-        ans:"Recommended smart casual attire and no sandals allowed."
+        ques:"Which Genting SkyWorlds tickets should I buy?",
+        ans:"You can choose to book a standard admission ticket which includes unlimited access to all rides and attractions at this theme park, or opt for combo tickets which not only include entry to Genting SkyWorlds but its neighbouring attractions such as Genting Skytropolis, Genting Cable Car and more!"
     },
     {
         id: uuidv4(),
-        ques:"The best time to visit Atmosphere 360?",
-        ans:"The Dinner dining will be ideal to witness the City of Light."
+        ques:"When should I visit Genting SkyWorlds theme park?",
+        ans:"The park is open daily from 11:00 AM to 6:00 PM. If you're looking to avoid the crowds, it's best to skip the months between June to September. Due to the holiday season, you can expect large crowds visiting the park. It's best to visit during the off season between September to November and January to March. The months of April and May tend to get quite hot as well."
+    },
+    {
+        id: uuidv4(),
+        ques:"How do I get to Genting SkyWorlds theme park?",
+        ans:"This theme park is located in the tourist and resort region of Genting Highlands in Pahang, about an hour from Kuala Lumpur."
     },
 ]
 

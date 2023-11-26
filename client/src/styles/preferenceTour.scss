@@ -1,0 +1,44 @@
+@use './variables.scss' as *;
+.prefrenceTab{
+    display: grid;
+    width: 100%;
+    padding: 1rem;
+
+    .prefrenceTabCardContainer{
+        display: grid;
+        grid-template-columns: repeat(4,350px);
+        gap: 1rem;
+        overflow-x: scroll;
+        padding:1rem;
+        
+        .prefrenceTabCard{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            background-color: $primaryModalColor;
+            display: flex;
+            flex-direction: column;
+            min-height: 300px;
+            justify-content: space-around;
+            border-radius: 16px;
+
+            .content{
+
+                button{
+                    display: block;
+                    width: 100%;
+                    background-color: $primary;
+                    color: #fff;
+                    padding: 8px 1rem;
+                    margin-top: 10px;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+
+
+            ul{
+                padding-left: 16px;
+            }
+        }
+    }
+}
