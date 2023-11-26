@@ -18,13 +18,15 @@ const Booking = () => {
         adultTotal,
         childCount,
         childTotal,
-        infantCount,
-        infantTotal,
+        generalCount,
+        generalTotal,
         seniorCount,
         seniorTotal,
         totalAmount,
         loading,
-        type
+        type,
+        bookingTitle,
+        pref
     } = useSelector(store => store.booking)
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -43,9 +45,11 @@ const Booking = () => {
                 bookingDate,
                 adultCount,
                 childCount,
-                infantCount,
+                generalCount,
                 seniorCount,
                 totalAmount,
+                pref,
+                bookingTitle,
                 bookingType: type
             })
             const response = res.data;
@@ -70,8 +74,9 @@ const Booking = () => {
                 <img className='banner' src={image} alt="" />
                 <h1>Confirm and Pay</h1>
                 <div className="detailsWrapper">
+                    <p className='bookingType'>{bookingTitle}</p>
+                    {pref && <p className='bookingType'>{pref}</p>}
                     <div className="topContainer">
-                    <p className='bookingType'>{type === 'dinner' ? "Dinner Buffet" : type === 'lunch' ? "Lunch Buffet": type === 'tea' && "Tea Buffet"}</p>
                         <p>{bookingDate}</p>
                         <Link to="/date-confirm"><BiEditAlt /></Link>
                     </div>
@@ -93,9 +98,9 @@ const Booking = () => {
                         }
 
                         {
-                            infantCount === 0 ? "" : <div className="guest">
-                                <p> Infant <span> X {infantCount}</span></p>
-                                <span>MYR {infantTotal}</span>
+                            generalCount === 0 ? "" : <div className="guest">
+                                <p> General <span> X {generalCount}</span></p>
+                                <span>MYR {generalTotal}</span>
                             </div>
                         }
 
@@ -109,7 +114,7 @@ const Booking = () => {
 
                         <div className="guest">
                             <p className='totalPayable'>Total Payable</p>
-                            <span className='totalPayable'>MYR {seniorTotal + infantTotal + childTotal + adultTotal}</span>
+                            <span className='totalPayable'>MYR {totalAmount}</span>
                         </div>
                     </div>
                     <form onSubmit={handleSubmit}>

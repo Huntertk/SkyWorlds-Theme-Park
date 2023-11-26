@@ -10,6 +10,8 @@ const initialState = {
     adultTotal: 0,
     childTotal: 0,
     seniorTotal: 0,
+    generalCount:0,
+    generalTotal:0,
     totalAmount: 0,
     isPaxModal: false,
     loading: false,
@@ -40,6 +42,16 @@ const bookingSlice = createSlice({
             state.adultCount = state.adultCount - 1
             setBookingDetailsFromLocalStorage(state)
         },
+
+
+        generalCountIncrease : (state, action) => {
+            state.generalCount = state.generalCount + 1
+            setBookingDetailsFromLocalStorage(state)
+        },
+        generalCountDecrease : (state, action) => {
+            state.generalCount = state.generalCount - 1
+            setBookingDetailsFromLocalStorage(state)
+        },
         childCountIncrease : (state, action) => {
             state.childCount = state.childCount + 1
             setBookingDetailsFromLocalStorage(state)
@@ -62,6 +74,11 @@ const bookingSlice = createSlice({
         },
         seniorCountDecrease : (state, action) => {
             state.seniorCount = state.seniorCount - 1
+            setBookingDetailsFromLocalStorage(state)
+        },
+
+        generalTotalAmount: (state) => {
+            state.generalTotal = state.generalCount * 75
             setBookingDetailsFromLocalStorage(state)
         },
         adultTotalAmount: (state) => {
@@ -176,7 +193,7 @@ const bookingSlice = createSlice({
             setBookingDetailsFromLocalStorage(state)
         },
         countTotalBookingAmount: (state, action) => {
-            state.totalAmount = state.adultTotal + state.childTotal + state.seniorTotal
+            state.totalAmount = state.adultTotal + state.childTotal + state.seniorTotal + state.generalTotal
             state.bookingResponse = ""
             setBookingDetailsFromLocalStorage(state)
         },
@@ -264,6 +281,9 @@ export const {
     settingBookingResponse,
     initialRender,
     setPreference,
+    generalCountDecrease,
+    generalCountIncrease,
+    generalTotalAmount
 } = bookingSlice.actions
 
 export default bookingSlice.reducer
