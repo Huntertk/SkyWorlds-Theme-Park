@@ -65,13 +65,22 @@ const bookingSlice = createSlice({
             setBookingDetailsFromLocalStorage(state)
         },
         adultTotalAmount: (state) => {
-            if(state.type === 'dinner'){
-                if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
-                    state.adultTotal = state.adultCount *  248
+            if(state.type === 'bookTypeOne'){
+                if(state.pref === "1-Day Pass") {
+                    state.adultTotal = state.adultCount *  151
                    return 
-                } else{
-                    state.adultTotal =  state.adultCount *  199
-                }
+                } else if(state.pref === "Combo: 1-Day Pass + Two-Way Standard Gondola Ride"
+                ){
+                    state.adultTotal = state.adultCount *  171
+                   return
+                } else if(state.pref === "1-Day Pass with Photo"){
+                    state.adultTotal = state.adultCount *  179
+                   return 
+                } else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets"
+                ) {
+                    state.adultTotal = state.adultCount *  215
+                   return 
+                } //First 
             } else if(state.type === 'lunch'){
                 if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
                     state.adultTotal =  state.adultCount *  148
@@ -91,13 +100,22 @@ const bookingSlice = createSlice({
             setBookingDetailsFromLocalStorage(state)
         },
         childTotalAmount: (state) => {
-            if(state.type === 'dinner'){
-                if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
-                    state.childTotal = state.childCount *  200
+            if(state.type === 'bookTypeOne'){
+                if(state.pref === "1-Day Pass") {
+                    state.childTotal = state.childCount *  128
                    return 
-                } else{
-                    state.childTotal =  state.childCount *  150
-                }
+                } else if(state.pref === "Combo: 1-Day Pass + Two-Way Standard Gondola Ride"
+                ){
+                    state.childTotal = state.childCount *  148
+                   return
+                } else if(state.pref === "1-Day Pass with Photo"){
+                    state.childTotal = state.childCount *  153
+                   return 
+                } else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets"
+                ) {
+                    state.childTotal = state.childCount *  190
+                   return 
+                } //First 
             } else if(state.type === 'lunch'){
                 if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
                     state.childTotal =  state.childCount *  111
@@ -117,13 +135,22 @@ const bookingSlice = createSlice({
             setBookingDetailsFromLocalStorage(state)
         },
         seniorTotalAmount: (state) => {
-            if(state.type === 'dinner'){
-                if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
-                    state.seniorTotal = state.seniorCount *  200
+            if(state.type === 'bookTypeOne'){
+                if(state.pref === "1-Day Pass") {
+                    state.seniorTotal =  state.seniorCount *  128
                    return 
-                } else{
-                    state.seniorTotal =  state.seniorCount *  150
-                }
+                } else if(state.pref === "Combo: 1-Day Pass + Two-Way Standard Gondola Ride"
+                ){
+                    state.seniorTotal =  state.seniorCount *  148
+                   return
+                } else if(state.pref === "1-Day Pass with Photo"){
+                    state.seniorTotal =  state.seniorCount *  153
+                   return 
+                } else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets"
+                ) {
+                    state.seniorTotal =  state.seniorCount *  190
+                   return 
+                } //First 
             } else if(state.type === 'lunch'){
                 if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
                     state.seniorTotal =  state.seniorCount *  111
