@@ -17,6 +17,9 @@ import {
     countTotalBookingAmount,
     cancelBooking,
     closePaxModel,
+    generalCountIncrease,
+    generalCountDecrease,
+    generalTotalAmount,
 } from '../features/booking/bookingSlice';
 
 
@@ -69,7 +72,9 @@ const PaxModal = ({selectedDate}) => {
         bookingDate,
         type,
         bookingTitle,
-        pref
+        pref,
+        generalCount,
+        generalTotal
     } = useSelector((store) => store.booking)
 
     const dispatch = useDispatch()
@@ -78,9 +83,10 @@ const PaxModal = ({selectedDate}) => {
         dispatch(adultTotalAmount())
         dispatch(childTotalAmount())
         dispatch(seniorTotalAmount())
+        dispatch(generalTotalAmount())
         dispatch(countTotalBookingAmount())
 
-    },[adultCount, childCount, seniorCount])
+    },[adultCount, childCount, seniorCount, generalCount])
     const navigate = useNavigate()
 
   return (
@@ -96,39 +102,55 @@ const PaxModal = ({selectedDate}) => {
         {pref && <p className='bookingType'>{pref}</p>}
         <h1>Select number of tickets</h1>
         <div className="paxSelector">
-            <Pax  
-            category ={"Adult"} 
-            ageText={"13 to 59 yrs"} 
-            price={199}
-            count={adultCount}
-            actionType={{
-                increase: adultCountIncrease,
-                decrease: adultCountDecrease
-            }}
-            total={adultTotal}
-             />
-            <Pax  
-            category ={"Child"} 
-            ageText={"6 to 12 yrs"} 
-            price={150}
-            count={childCount}
-            actionType={{
-                increase: childCountIncrease,
-                decrease: childCountDecrease
-            }}
-            total={childTotal}
+            {type === 'bookTypeTwo' ? <Pax
+             category ={"General"} 
+             ageText={""} 
+             price={199}
+             count={generalCount}
+             actionType={{
+                 increase: generalCountIncrease,
+                 decrease: generalCountDecrease
+             }}
+             total={generalTotal}
             />
-            <Pax  
-            category ={"Senior"} 
-            ageText={"Above 59 yrs"} 
-            price={150} 
-            count={seniorCount}
-            actionType={{
-                increase: seniorCountIncrease,
-                decrease: seniorCountDecrease
-            }}
-            total={seniorTotal}
-            />
+        :    (
+            <>
+                <Pax  
+                category ={"Adult"} 
+                ageText={"13 to 59 yrs"} 
+                price={199}
+                count={adultCount}
+                actionType={{
+                    increase: adultCountIncrease,
+                    decrease: adultCountDecrease
+                }}
+                total={adultTotal}
+                />
+                <Pax  
+                category ={"Child"} 
+                ageText={"6 to 12 yrs"} 
+                price={150}
+                count={childCount}
+                actionType={{
+                    increase: childCountIncrease,
+                    decrease: childCountDecrease
+                }}
+                total={childTotal}
+                />
+                <Pax  
+                category ={"Senior"} 
+                ageText={"Above 59 yrs"} 
+                price={150} 
+                count={seniorCount}
+                actionType={{
+                    increase: seniorCountIncrease,
+                    decrease: seniorCountDecrease
+                }}
+                total={seniorTotal}
+                />
+            </>
+        )
+        }
         </div>
             <div className="totalPayable">
                 <span>Total</span>
