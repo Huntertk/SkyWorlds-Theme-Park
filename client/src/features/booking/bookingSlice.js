@@ -82,6 +82,7 @@ const bookingSlice = createSlice({
             setBookingDetailsFromLocalStorage(state)
         },
         adultTotalAmount: (state) => {
+            //First
             if(state.type === 'bookTypeOne'){
                 if(state.pref === "1-Day Pass") {
                     state.adultTotal = state.adultCount *  151
@@ -97,26 +98,19 @@ const bookingSlice = createSlice({
                 ) {
                     state.adultTotal = state.adultCount *  215
                    return 
-                } //First 
-            } else if(state.type === 'lunch'){
-                if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
-                    state.adultTotal =  state.adultCount *  148
-                    return 
-                 } else{
-                    state.adultTotal = state.adultCount *  118
-                 }
-            } else if(state.type === 'tea'){
-                if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
-                    state.adultTotal =  state.adultCount *  110
-                    return
-                 } else{
-                    state.adultTotal = state.adultCount *  88
-                 }
+                } //Third
+            } else if(state.type === 'bookTypeThree'){
+                state.adultTotal = state.adultCount *  215
+                return 
+            } else if(state.type === 'bookTypeFour'){
+                //Fourth
+                state.adultTotal = state.adultCount *  166
+                return
             }
-            // state.adultTotal = state.type === 'dinner' ?  state.adultCount *  199 : state.type === 'lunch' ? state.adultCount * 118 : state.adultCount * 88   
             setBookingDetailsFromLocalStorage(state)
         },
         childTotalAmount: (state) => {
+            //First
             if(state.type === 'bookTypeOne'){
                 if(state.pref === "1-Day Pass") {
                     state.childTotal = state.childCount *  128
@@ -132,26 +126,19 @@ const bookingSlice = createSlice({
                 ) {
                     state.childTotal = state.childCount *  190
                    return 
-                } //First 
-            } else if(state.type === 'lunch'){
-                if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
-                    state.childTotal =  state.childCount *  111
-                    return 
-                 } else{
-                    state.childTotal = state.childCount *  82
-                 }
-            } else if(state.type === 'tea'){
-                if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
-                    state.childTotal = state.childCount *  90
-                    return
-                 } else{
-                    state.childTotal = state.childCount *  70
-                 }
+                } //Third 
+            }  else if(state.type === 'bookTypeThree'){
+                state.childTotal = state.childCount *  190
+                return 
+            } else if(state.type === 'bookTypeFour'){
+                //Fourth
+                state.childTotal = state.childCount *  136
+                return
             }
-            // state.childTotal = state.type === 'dinner' ? state.childCount * 10 : state.type === 'lunch' ? state.childCount * 10 : state.childCount * 10
             setBookingDetailsFromLocalStorage(state)
         },
         seniorTotalAmount: (state) => {
+            //First
             if(state.type === 'bookTypeOne'){
                 if(state.pref === "1-Day Pass") {
                     state.seniorTotal =  state.seniorCount *  128
@@ -167,24 +154,15 @@ const bookingSlice = createSlice({
                 ) {
                     state.seniorTotal =  state.seniorCount *  190
                    return 
-                } //First 
-            } else if(state.type === 'lunch'){
-                if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
-                    state.seniorTotal =  state.seniorCount *  111
-                    return 
-                 } else{
-                    state.seniorTotal = state.seniorCount *  82
-                 }
-            } else if(state.type === 'tea'){
-                if(state.bookingDay === 'Sun' || state.bookingDay === 'Sat' || state.bookingDay === 'Fri') {
-                    state.seniorTotal = state.seniorCount *  90
-                    return
-                 } else{
-                    state.seniorTotal = state.seniorCount *  70
-                 }
+                } //Third 
+            } else if(state.type === 'bookTypeThree'){
+                state.seniorTotal = state.seniorCount *  190
+                return 
+            } else if(state.type === 'bookTypeFour'){
+                //Fourth
+                state.seniorTotal = state.seniorCount *  136
+                return
             }
-
-            // state.seniorTotal = state.type === 'dinner' ? state.seniorCount * 150 : state.type === 'lunch' ? state.seniorCount * 82 : state.seniorCount * 70
             setBookingDetailsFromLocalStorage(state)
         },
 
