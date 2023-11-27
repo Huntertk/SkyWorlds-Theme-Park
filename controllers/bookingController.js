@@ -39,8 +39,8 @@ export const createBooking = async (req, res) => {
                 },
             ],
             mode: 'payment',
-            success_url: `https://localhost:5173/${responseClientUrl}`,
-            cancel_url: 'https://localhost:5173/',
+            success_url: `https://skyworlds-theme-pak.onrender.com/${responseClientUrl}`,
+            cancel_url: 'https://skyworlds-theme-pak.onrender.com//',
             payment_intent_data: {
                 setup_future_usage: 'off_session',
                 description: 'Booking payment',
