@@ -6,6 +6,7 @@ import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { bookingFailed,  bookingStart, bookingSucess } from '../features/booking/bookingSlice'
 
+
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import '../styles/booking.scss'
@@ -50,7 +51,7 @@ const Booking = () => {
                 totalAmount,
                 pref,
                 bookingTitle,
-                bookingType: type
+                bookingType: type,
             })
             const response = res.data;
             const {data} = await axios.get('/api/v1/booking/totalbooking')

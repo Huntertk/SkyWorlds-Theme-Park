@@ -19,7 +19,8 @@ export const createBooking = async (req, res) => {
         infantCount,
         seniorCount,
         totalAmount,
-        bookingType
+        bookingType,
+        bookingTitle,
     } = req.body;
     try {
         const session = await stripe.checkout.sessions.create({
@@ -29,7 +30,7 @@ export const createBooking = async (req, res) => {
                     price_data: {
                         currency: 'myr',
                         product_data: {
-                            name: bookingType === 'dinner' ? "Atmosphere 360 Revolving Restaurant - Dinner Buffet" : bookingType === 'lunch' ? "Atmosphere 360 Revolving Restaurant - Lunch Buffet" : "Atmosphere 360 Revolving Restaurant - Tea Buffet",
+                            name: bookingTitle,
                         },
                         unit_amount: totalAmount * 100,
                     },
@@ -37,7 +38,7 @@ export const createBooking = async (req, res) => {
                 },
             ],
             mode: 'payment',
-            success_url: 'https://atmosphere-360.onrender.com/success',
+            success_url: `https://localhost:5173/success`,
             cancel_url: 'https://atmosphere-360.onrender.com/',
             payment_intent_data: {
                 setup_future_usage: 'off_session',
