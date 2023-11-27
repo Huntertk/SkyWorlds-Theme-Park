@@ -21,6 +21,7 @@ import CompanyDetails from './pages/CompanyDetails'
 import HelpCenter from './pages/HelpCenter'
 import ConfirmBooking from './pages/ConfirmBooking'
 import {useSelector} from 'react-redux'
+import ErrorPage from './pages/ErrorPage'
 
 const App = () => {
   const {responseClientUrl} = useSelector(state => state.booking)
@@ -49,6 +50,7 @@ const App = () => {
             <Route path="/admin/cancelled-booking" element={<CancelledBooking />} />
           </Route>
         </Route>
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   )
