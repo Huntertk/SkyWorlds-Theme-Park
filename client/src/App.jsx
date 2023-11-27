@@ -20,9 +20,10 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import CompanyDetails from './pages/CompanyDetails'
 import HelpCenter from './pages/HelpCenter'
 import ConfirmBooking from './pages/ConfirmBooking'
-
+import {useSelector} from 'react-redux'
 
 const App = () => {
+  const {responseClientUrl} = useSelector(state => state.booking)
   return (
     <BrowserRouter>
     <ToastContainer position='top-center' />
@@ -31,7 +32,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path="/date-confirm" element={<BookingDateConfirmation />} />
           <Route path="/booking" element={<Booking />} />
-          <Route path="/success" element={<PaymentSucess />} />
+          <Route path={`/${responseClientUrl}`} element={<PaymentSucess />} />
           <Route path="/bookingconfirm" element={<ConfirmBooking />} />
           <Route path="/terms" element={<TermAndConditionPage />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />

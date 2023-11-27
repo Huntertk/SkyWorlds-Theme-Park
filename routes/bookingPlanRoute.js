@@ -3,7 +3,7 @@ import { addBookingPlan, getAllBookingPlan } from "../controllers/bookingPlanCon
 
 const router = Router()
 
-// router.post('/createbookingplan', addBookingPlan)
+router.post('/createbookingplan', addBookingPlan)
 router.get('/getallbookingplan', getAllBookingPlan)
 
 export default router

@@ -21,6 +21,7 @@ const initialState = {
     email:"",
     mobileNumber:"",
     bookingResponse: "",
+    responseClientUrl:"",
     type:"",
     totalBookingsCount: 0,
     bookingDay: "",
@@ -217,6 +218,7 @@ const bookingSlice = createSlice({
             state.mobileNumber = action.payload.mobileNumber
             state.bookingResponse = action.payload.bookingResponse
             state.totalBookingsCount = action.payload.totalBookingsCount
+            state.responseClientUrl = action.payload.responseClientUrl
             console.log(state);
             setBookingDetailsFromLocalStorage(state)
         },

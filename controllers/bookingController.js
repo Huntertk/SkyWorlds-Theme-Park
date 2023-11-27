@@ -16,11 +16,12 @@ export const createBooking = async (req, res) => {
         bookingDate,
         adultCount,
         childCount,
-        infantCount,
+        generalCount,
         seniorCount,
         totalAmount,
         bookingType,
         bookingTitle,
+        responseClientUrl
     } = req.body;
     try {
         const session = await stripe.checkout.sessions.create({
@@ -38,8 +39,8 @@ export const createBooking = async (req, res) => {
                 },
             ],
             mode: 'payment',
-            success_url: `https://localhost:5173/success`,
-            cancel_url: 'https://atmosphere-360.onrender.com/',
+            success_url: `https://localhost:5173/${responseClientUrl}`,
+            cancel_url: 'https://localhost:5173/',
             payment_intent_data: {
                 setup_future_usage: 'off_session',
                 description: 'Booking payment',
@@ -58,7 +59,7 @@ export const createBooking = async (req, res) => {
                     bookingDate,
                     adultCount,
                     childCount,
-                    infantCount,
+                    generalCount,
                     seniorCount,
                     totalAmount,
                 },

@@ -5,7 +5,7 @@ import { BiEditAlt } from 'react-icons/bi'
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { bookingFailed,  bookingStart, bookingSucess } from '../features/booking/bookingSlice'
-
+import { v4 as uuidv4 } from 'uuid';
 
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
@@ -33,7 +33,7 @@ const Booking = () => {
     const [email, setEmail] = useState("")
     const [mobileNumber, setMobileNumber] = useState("")
     const dispatch = useDispatch()
-
+    const responseClientUrl = uuidv4()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -52,10 +52,11 @@ const Booking = () => {
                 pref,
                 bookingTitle,
                 bookingType: type,
+                responseClientUrl
             })
             const response = res.data;
             const {data} = await axios.get('/api/v1/booking/totalbooking')
-            dispatch(bookingSucess({name, email, mobileNumber, bookingResponse: response.url, totalBookingsCount: data.totalCount}))
+            dispatch(bookingSucess({name, email, mobileNumber, bookingResponse: response.url, totalBookingsCount: data.totalCount, responseClientUrl}))
 
             window.location.href = response.url;
         } catch (error) {
