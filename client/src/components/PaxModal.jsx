@@ -45,13 +45,8 @@ const Pax = ({category, ageText, price, count, actionType, total}) => {
                     {
                         count === 0 ? <AiOutlineMinusCircle className='disabledBtn'  /> : <AiOutlineMinusCircle onClick={handleDecrease} />
                     }
-                    
                     <p>{count}</p>
-
-                    {
-                        count === 5 ? <AiOutlinePlusCircle className='disabledBtn' /> : <AiOutlinePlusCircle onClick={handleIncrese} />
-                    }
-                    
+                        <AiOutlinePlusCircle onClick={handleIncrese} />
                 </div>
                 <div className="price">
                     <span>MYR {total}</span>
