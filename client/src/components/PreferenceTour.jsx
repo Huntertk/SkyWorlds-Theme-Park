@@ -2,7 +2,8 @@ import '../styles/preferenceTour.scss'
 import { preferenceData } from '../data'
 import {useDispatch, useSelector} from 'react-redux'
 import { countTotalBookingAmount, setPreference } from '../features/booking/bookingSlice'
-import { TiTick } from "react-icons/ti";
+// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 
 const CardData = ({data}) => {
     const {pref}  = useSelector(state => state.booking)
