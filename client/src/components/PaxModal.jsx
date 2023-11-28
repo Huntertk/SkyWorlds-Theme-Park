@@ -37,21 +37,21 @@ const Pax = ({category, ageText, price, count, actionType, total}) => {
     }    
     return (
          <div className="pax">
-                <p>
-                    <span>{category}</span>
-                    <span>{ageText}</span>
-                </p>
-                <div className="btnContainer">
-                    {
-                        count === 0 ? <AiOutlineMinusCircle className='disabledBtn'  /> : <AiOutlineMinusCircle onClick={handleDecrease} />
-                    }
-                    <p>{count}</p>
-                        <AiOutlinePlusCircle onClick={handleIncrese} />
-                </div>
-                <div className="price">
-                    <span>MYR {total}</span>
-                </div>
+            <p>
+                <span>{category}</span>
+                <span>{ageText}</span>
+            </p>
+            <div className="btnContainer">
+                {
+                    count === 0 ? <AiOutlineMinusCircle className='disabledBtn'  /> : <AiOutlineMinusCircle onClick={handleDecrease} />
+                }
+                <p>{count}</p>
+                    <AiOutlinePlusCircle onClick={handleIncrese} />
             </div>
+            <div className="price">
+                <span>MYR {total}</span>
+            </div>
+        </div>
     )
 }
 

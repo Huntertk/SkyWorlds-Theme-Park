@@ -4,7 +4,7 @@ import '../styles/homeVisitors.scss'
 const HomeVisitorTips = () => {
   return (
     <section className="homeVisitorTipsMainContainer">
-        <h1>GVisitor Tips & Guidelines</h1>
+        <h1>Visitor Tips & Guidelines</h1>
         <ul>
             <li>Use the Guest Services in Studio Plaza and SkyAvenue Gateway for ticket assistance, information, and reporting lost & found.</li>
             <li>Genting SkyWorlds follows a cashless payment system. Apart from credit/debit cards and QR payment, the theme park accepts GeMCash and Genting Points.</li>
