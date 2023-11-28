@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import image from '../assets/images/IMGNINE.jpg'
+import image from '../assets/images/homeMain.jpg'
 import axios from 'axios'
 import { BiEditAlt } from 'react-icons/bi'
 import { Link, Navigate, useNavigate } from 'react-router-dom';
