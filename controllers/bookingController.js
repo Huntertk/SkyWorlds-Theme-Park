@@ -152,10 +152,28 @@ export const successBooking = async (req, res, next) => {
                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank" href="https://skyworlds-theme-pak.onrender.com/"><img src="https://i.postimg.cc/J4DR0BZG/logo.png" alt style="display: block;" width="250"></a></td>
+                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank" href="https://skyworlds-theme-pak.onrender.com/"><img src="https://i.postimg.cc/J4DR0BZG/logo.png" alt style="display: block;" width="165"></a></td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank" href="https://skyworlds-theme-pak.onrender.com/"><img src="https://i.postimg.cc/FRRVHmgF/homeMain.jpg" alt style="display: block;" width="390"></a></td>
+                                                                                    <td align="center" class="esd-block-text" bgcolor="#ffffff">
+                                                                                        <h1 style="color: #f26823;">Booking Successfully</h1>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-text es-p5t es-p5b" bgcolor="#ffffff">
+                                                                                        <p style="color: #f26823;">Come as a Guest and Leave as Family.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://i.postimg.cc/FRRVHmgF/homeMain.jpg" alt style="display: block;" width="455"></a></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -178,23 +196,22 @@ export const successBooking = async (req, res, next) => {
                                         <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff;">
                                             <tbody>
                                                 <tr>
-                                                    <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
+                                                    <td class="esd-structure es-p20t" align="left">
                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                    <td width="600" class="esd-container-frame" align="center" valign="top">
                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text" bgcolor="#ffffff">
-                                                                                        <h2 style="line-height: 150%; color: #f26823;">BOOKING ID&nbsp;&nbsp;#${req.body.bookingId}</h2>
-                                                                                        <p><br></p>
+                                                                                        <h2 style="line-height: 150%; color: #f26823; font-size: 16px;">BOOKING ID #${req.body.bookingId}</h2>
                                                                                         <p style="line-height: 150%; color: #f26823; font-size: 16px;"><strong>Date of Reservation&nbsp;&nbsp;${req.body.bookingDate}</strong></p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text es-m-txt-c es-p20t" bgcolor="#ffffff">
-                                                                                        <p style="color: #f26823; font-size: 18px;"><strong>Order Summary</strong></p>
+                                                                                        <p style="color: #f26823; font-size: 16px;"><strong>Order Summary</strong></p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -217,7 +234,7 @@ export const successBooking = async (req, res, next) => {
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="esd-structure es-p20t es-p10b es-p20r es-p20l esdev-adapt-off" align="left">
+                                                    <td class="esd-structure esdev-adapt-off es-p20" align="left">
                                                         <table width="560" cellpadding="0" cellspacing="0" class="esdev-mso-table">
                                                             <tbody>
                                                                 <tr>
@@ -225,11 +242,11 @@ export const successBooking = async (req, res, next) => {
                                                                         <table cellpadding="0" cellspacing="0" class="es-left" align="left">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td width="161" class="esd-container-frame" align="left">
+                                                                                    <td width="295" class="esd-container-frame" align="left">
                                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td align="center" class="esd-block-image es-m-p5" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://i.postimg.cc/KjpV8Jgw/genting-Awanasky-Way-Img-Six.jpg" alt style="display: block;" width="115"></a></td>
+                                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://i.postimg.cc/KjpV8Jgw/genting-Awanasky-Way-Img-Six.jpg" alt style="display: block;" height="275"></a></td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -243,15 +260,580 @@ export const successBooking = async (req, res, next) => {
                                                                         <table cellpadding="0" cellspacing="0" class="es-right" align="right">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td width="379" align="left" class="esd-container-frame">
+                                                                                    <td width="245" align="left" class="esd-container-frame">
                                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td align="center" class="esd-block-text">
-                                                                                                        <p style="color: #f26823;"><br></p>
-                                                                                                        <h3 style="font-size: 14px; color: #f26823;"><strong>${req.body.bookingTitle}</strong></h3>
-                                                                                                        <p style="font-size: 14px; color: #f26823;"><br></p>
-                                                                                                        ${req.body.prefrence && `<p style="font-size: 14px; color: #f26823;"><strong>${req.body.prefrence}</strong></p>`}
+                                                                                                    <td align="left" class="esd-block-text">
+                                                                                                        <p style="font-size: 18px; color: #f26823;"><strong>${req.body.bookingTitle}</strong><br></p>
+                                                                                                        <p style="font-size: 18px; color: #f26823;"><br></p>
+                                                                                                        ${req.body.prefrence && `<p style="font-size: 18px; color: #f26823;"><strong>${req.body.prefrence}</strong></p>` }
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="esd-structure es-p20r es-p20l" align="left">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="esd-structure es-p5" align="left">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="590" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-text">
+                                                                                        <p style="color: #f26823; font-size: 20px;"><strong>Payment Summary</strong></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="esd-structure es-p20r es-p20l" align="left">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                ${req.body.adultCount ? `
+                                                    <tr>
+                                                        <td class="esd-structure esdev-adapt-off es-p10t es-p10b es-p20r es-p20l" align="left">
+                                                            <table width="560" cellpadding="0" cellspacing="0" class="esdev-mso-table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="esdev-mso-td" valign="top">
+                                                                            <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="267" class="esd-container-frame" align="left">
+                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="left" class="esd-block-text">
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>Adult X ${req.body.adultCount}</strong></p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td width="20"></td>
+                                                                        <td class="esdev-mso-td" valign="top">
+                                                                            <table cellpadding="0" cellspacing="0" class="es-right" align="right">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="273" align="left" class="esd-container-frame">
+                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="right" class="esd-block-text">
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.adultTotal}</strong></p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    ` : ""
+                                                }
+
+                                                ${req.body.childCount ? `
+                                                    <tr>
+                                                        <td class="esd-structure esdev-adapt-off es-p10t es-p10b es-p20r es-p20l" align="left">
+                                                            <table width="560" cellpadding="0" cellspacing="0" class="esdev-mso-table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="esdev-mso-td" valign="top">
+                                                                            <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="267" class="esd-container-frame" align="left">
+                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="left" class="esd-block-text">
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>Child X ${req.body.childCount}</strong></p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td width="20"></td>
+                                                                        <td class="esdev-mso-td" valign="top">
+                                                                            <table cellpadding="0" cellspacing="0" class="es-right" align="right">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="273" align="left" class="esd-container-frame">
+                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="right" class="esd-block-text">
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.childTotal}</strong></p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    ` : ""
+                                                }
+
+                                                ${req.body.seniorCount ? ` 
+                                                    <tr>
+                                                        <td class="esd-structure esdev-adapt-off es-p10t es-p10b es-p20r es-p20l" align="left">
+                                                            <table width="560" cellpadding="0" cellspacing="0" class="esdev-mso-table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="esdev-mso-td" valign="top">
+                                                                            <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="267" class="esd-container-frame" align="left">
+                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="left" class="esd-block-text">
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>Senior X ${req.body.seniorCount}</strong></p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td width="20"></td>
+                                                                        <td class="esdev-mso-td" valign="top">
+                                                                            <table cellpadding="0" cellspacing="0" class="es-right" align="right">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="273" align="left" class="esd-container-frame">
+                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="right" class="esd-block-text">
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.seniorTotal}</strong></p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    ` : ""
+                                                }
+
+
+                                                ${req.body.generalCount ? `
+                                                    <tr>
+                                                        <td class="esd-structure esdev-adapt-off es-p10t es-p10b es-p20r es-p20l" align="left">
+                                                            <table width="560" cellpadding="0" cellspacing="0" class="esdev-mso-table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="esdev-mso-td" valign="top">
+                                                                            <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="267" class="esd-container-frame" align="left">
+                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="left" class="esd-block-text">
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>General X ${req.body.generalCount}</strong></p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td width="20"></td>
+                                                                        <td class="esdev-mso-td" valign="top">
+                                                                            <table cellpadding="0" cellspacing="0" class="es-right" align="right">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="273" align="left" class="esd-container-frame">
+                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="right" class="esd-block-text">
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.generalTotal}</strong></p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    ` : ""
+                                                }
+                                                <tr>
+                                                    <td class="esd-structure esdev-adapt-off es-p10" align="left">
+                                                        <table width="580" cellpadding="0" cellspacing="0" class="esdev-mso-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="esdev-mso-td" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td width="280" class="esd-container-frame" align="left">
+                                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td align="left" class="esd-block-text">
+                                                                                                        <p style="font-size: 16px; color: #f26823;"><strong>Total</strong></p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td width="20"></td>
+                                                                    <td class="esdev-mso-td" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" class="es-right" align="right">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td width="280" align="left" class="esd-container-frame">
+                                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td align="right" class="esd-block-text">
+                                                                                                        <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.totalAmount}</strong></p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="esd-structure" align="left">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="600" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-text">
+                                                                                        <p style="font-size: 20px; color: #f26823;"><strong>Customer Details</strong></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
+                                                                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table cellpadding="0" cellspacing="0" class="es-footer esd-footer-popover" align="center">
+                            <tbody>
+                                <tr>
+                                    <td class="esd-stripe" align="center" esd-custom-block-id="343277" bgcolor="#ffffff" style="background-color: #ffffff;">
+                                        <table class="es-footer-body" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff;" bgcolor="#ffffff">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="esd-structure es-p20t es-p20r es-p20l esdev-adapt-off" align="left">
+                                                        <table width="560" cellpadding="0" cellspacing="0" class="esdev-mso-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="esdev-mso-td" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td width="270" class="esd-container-frame" align="left">
+                                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td align="right" class="esd-block-text">
+                                                                                                        <p style="line-height: 200%; font-size: 16px; color: #f26823;"><strong>Name :&nbsp;</strong></p>
+                                                                                                        <p style="line-height: 200%; font-size: 16px; color: #f26823;"><strong>Email :&nbsp;</strong></p>
+                                                                                                        <p style="line-height: 200%; font-size: 16px; color: #f26823;"><strong>Mobile:&nbsp;</strong></p>
+                                                                                                        <p style="line-height: 200%; color: #f26823;"><br></p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td width="20"></td>
+                                                                    <td class="esdev-mso-td" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" class="es-right" align="right">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td width="270" align="left" class="esd-container-frame">
+                                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td align="left" class="esd-block-text">
+                                                                                                        <p style="line-height: 200%; font-size: 16px; color: #f26823;"><strong>${req.body.name}</strong></p>
+                                                                                                        <p style="line-height: 200%; font-size: 16px; color: #f26823;"><strong>${req.body.email}</strong></p>
+                                                                                                        <p style="line-height: 200%; font-size: 16px; color: #f26823;"><strong>${req.body.mobileNumber}</strong></p>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                             </tbody>
@@ -285,307 +867,12 @@ export const successBooking = async (req, res, next) => {
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="esd-structure es-p20t es-p10b es-p20r es-p20l" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
                                                                                 <tr>
-                                                                                    <td align="center" class="esd-block-text">
-                                                                                        <p style="font-size: 22px; color: #f26823;"><strong>Payment Summary</strong></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                ${req.body.adultCount ? `
-                                                    <tr>
-                                                        <td class="esd-structure es-p20t es-p10b es-p20r es-p20l" align="left">
-                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td align="center" class="esd-block-text">
-                                                                                            <p style="font-size: 16px; color: #f26823;"><em><strong>&nbsp; &nbsp; &nbsp; &nbsp;Adult X ${req.body.adultCount} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MYR ${req.body.adultTotal}</strong></em></p>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
-                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                    ` : ""
-
-                                                }
-
-                                                ${req.body.childCount ? `
-                                                    <tr>
-                                                        <td class="esd-structure es-p20t es-p10b es-p20r es-p20l" align="left">
-                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td align="center" class="esd-block-text">
-                                                                                            <p style="font-size: 16px; color: #f26823;"><em><strong>&nbsp; &nbsp; &nbsp; &nbsp;Child X ${req.body.childCount} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MYR ${req.body.childTotal}</strong></em></p>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
-                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                    ` : ""
-
-                                                }
-
-                                                ${req.body.seniorCount ? `
-                                                    <tr>
-                                                        <td class="esd-structure es-p20t es-p10b es-p20r es-p20l" align="left">
-                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td align="center" class="esd-block-text">
-                                                                                            <p style="font-size: 16px; color: #f26823;"><em><strong>&nbsp; &nbsp; &nbsp; &nbsp;Senior X ${req.body.seniorCount} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MYR ${req.body.seniorTotal}</strong></em></p>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
-                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                    ` : ""
-                                                }
-
-                                                ${req.body.generalCount ? `
-                                                    <tr>
-                                                        <td class="esd-structure es-p20t es-p10b es-p20r es-p20l" align="left">
-                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td align="center" class="esd-block-text">
-                                                                                            <p style="font-size: 16px; color: #f26823;"><em><strong>&nbsp; &nbsp; &nbsp; &nbsp;General X ${req.body.generalCount} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MYR ${req.body.generalTotal}</strong></em></p>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
-                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                    ` : ""
-
-                                                }
-                                                
-                                                <tr>
-                                                    <td class="esd-structure es-p20t es-p10b es-p20r es-p20l" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-text">
-                                                                                        <p style="font-size: 16px; color: #000000;"><strong>Total Amount&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MYR ${req.body.totalAmount}</strong></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="esd-structure es-p20r es-p20l" align="left" bgcolor="#ffffff" style="background-color: #ffffff;">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
-                                                                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text" bgcolor="#ffffff">
-                                                                                        <p style="color: #666666; line-height: 100%;"><strong>Customer Details</strong></p>
-                                                                                        <p style="color: #666666; line-height: 100%;"><br></p>
-                                                                                        <p style="color: #666666; line-height: 100%;"><strong>Name: ${req.body.name}</strong></p>
-                                                                                        <p style="color: #666666; line-height: 100%;"><br><strong>Email: ${req.body.email}</strong></p>
-                                                                                        <p style="color: #666666; line-height: 100%;"><br><strong>Phone Number: ${req.body.mobileNumber}</strong></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
-                                                                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text es-p20t es-p25b es-p20r es-p20l" bgcolor="#ffffff">
-                                                                                        <p style="font-size: 14px; color: #000000; line-height: 200%;">We're delighted to confirm your booking! Your official e-ticket is on its way to your email shortly. In case you don't receive it, please don't hesitate to get in touch with us.</p>
-                                                                                        <p style="font-size: 14px; color: #000000; line-height: 200%;">Contact details:<br>Tel: +60 17-201 8194<br>Email: support@malaysia-experience.com</p>
-                                                                                        <p style="font-size: 14px; color: #000000; line-height: 200%;">Thank you for choosing Malaysia Experience. We look forward to serving you.</p>
-                                                                                        <p style="font-size: 14px; color: #000000; line-height: 200%;">Best regards,<br>Support Team<br>Malaysia Experience</p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text" bgcolor="#ffffff">
-                                                                                        <p><br></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table cellpadding="0" cellspacing="0" class="es-footer esd-footer-popover" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe" align="center" esd-custom-block-id="343277" bgcolor="#ffffff" style="background-color: #ffffff;">
-                                        <table class="es-footer-body" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff;" bgcolor="#ffffff">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p30t es-p30b es-p20r es-p20l" align="left" bgcolor="#ffffff" style="background-color: #ffffff;">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="left">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-social es-p10t es-p10b" style="font-size:0">
-                                                                                        <table cellpadding="0" cellspacing="0" class="es-table-not-adapt es-social">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td align="center" valign="top" class="es-p20r" esd-tmp-icon-type="facebook"><a target="_blank" href="https://viewstripo.email"><img title="Facebook" src="https://tlr.stripocdn.email/content/assets/img/social-icons/logo-black/facebook-logo-black.png" alt="Fb" width="32"></a></td>
-                                                                                                    <td align="center" valign="top" class="es-p20r" esd-tmp-icon-type="twitter"><a target="_blank" href="https://viewstripo.email"><img title="Twitter" src="https://tlr.stripocdn.email/content/assets/img/social-icons/logo-black/twitter-logo-black.png" alt="Tw" width="32"></a></td>
-                                                                                                    <td align="center" valign="top" class="es-p20r" esd-tmp-icon-type="instagram"><a target="_blank" href="https://viewstripo.email"><img title="Instagram" src="https://tlr.stripocdn.email/content/assets/img/social-icons/logo-black/instagram-logo-black.png" alt="Inst" width="32"></a></td>
-                                                                                                    <td align="center" valign="top" esd-tmp-icon-type="youtube"><a target="_blank" href="https://viewstripo.email"><img title="Youtube" src="https://tlr.stripocdn.email/content/assets/img/social-icons/logo-black/youtube-logo-black.png" alt="Yt" width="32"></a></td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
+                                                                                    <td align="left" class="esd-block-text es-p10" esd-links-color="#14a0f6">
+                                                                                        <p style="color: #000000; line-height: 200%; font-size: 15px;">We're delighted to confirm your booking! Your official e-ticket is on its way to your email shortly. In case you don't receive it, please don't hesitate to get in touch with us.</p>
+                                                                                        <p style="color: #000000; line-height: 200%; font-size: 15px;">Contact details:<br>Tel: +6017-2018194<br>Email: <a href="mailto:support@malaysia-experience.com" target="_blank" style="font-size: 15px; color: #14a0f6;">support@malaysia-experience.com</a></p>
+                                                                                        <p style="color: #000000; line-height: 200%; font-size: 15px;">Thank you for choosing Malaysia Experience. We look forward to serving you.</p>
+                                                                                        <p style="color: #000000; line-height: 200%; font-size: 15px;">Best regards,<br>Support Team<br>Malaysia Experience</p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -608,7 +895,6 @@ export const successBooking = async (req, res, next) => {
         </table>
     </div>
 </body>
-
 </html>
             `
         };
