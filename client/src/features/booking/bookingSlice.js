@@ -37,50 +37,50 @@ const bookingSlice = createSlice({
     reducers:{
         adultCountIncrease : (state, action) => {
             state.adultCount = state.adultCount + 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         adultCountDecrease : (state, action) => {
             state.adultCount = state.adultCount - 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
 
 
         generalCountIncrease : (state, action) => {
             state.generalCount = state.generalCount + 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         generalCountDecrease : (state, action) => {
             state.generalCount = state.generalCount - 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         childCountIncrease : (state, action) => {
             state.childCount = state.childCount + 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         childCountDecrease : (state, action) => {
             state.childCount = state.childCount - 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         infantCountIncrease : (state, action) => {
             state.infantCount = state.infantCount + 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         infantCountDecrease : (state, action) => {
             state.infantCount = state.infantCount - 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         seniorCountIncrease : (state, action) => {
             state.seniorCount = state.seniorCount + 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         seniorCountDecrease : (state, action) => {
             state.seniorCount = state.seniorCount - 1
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
 
         generalTotalAmount: (state) => {
             state.generalTotal = state.generalCount * 75
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         adultTotalAmount: (state) => {
             //First
@@ -112,7 +112,7 @@ const bookingSlice = createSlice({
                 state.adultTotal = state.adultCount *  225
                 return
             }
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         childTotalAmount: (state) => {
             //First
@@ -145,7 +145,7 @@ const bookingSlice = createSlice({
                 return
             }
 
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         seniorTotalAmount: (state) => {
             //First
@@ -177,23 +177,23 @@ const bookingSlice = createSlice({
                 state.seniorTotal = state.seniorCount *  200
                 return
             }
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
 
         setPreference: (state, action) => {
             state.pref = action.payload.pref
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         countTotalBookingAmount: (state, action) => {
             state.totalAmount = state.adultTotal + state.childTotal + state.seniorTotal + state.generalTotal
             state.bookingResponse = ""
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         setBookingDate: (state, action) => {
             state.bookingDate = action.payload.selectedBookingDate
             state.bookingResponse = ""
             state.bookingDay = action.payload.selectedDay.split(' ')[0]
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         openPaxModel: (state) => {
             state.isPaxModal = true
@@ -233,10 +233,9 @@ const bookingSlice = createSlice({
         choosingBooking: (state, action) => {
             state.type = action.payload.type
             state.bookingTitle = action.payload.title
-            setBookingDetailsFromLocalStorage(state)
+            // setBookingDetailsFromLocalStorage(state)
         },
         settingBookingResponse: (state, action) => {
-            console.log(action.payload);
             state.bookingResponse = ""
             state.bookingId = action.payload.createBookingId
             setBookingDetailsFromLocalStorage(state)
