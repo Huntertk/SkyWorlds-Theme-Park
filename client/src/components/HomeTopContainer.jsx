@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/homeTopContainer.scss'
-import image from '../assets/images/homeMain.avif'
 
 const HomeTopContainer = () => {
 
@@ -11,7 +10,7 @@ const HomeTopContainer = () => {
             <p>TravelVago is an authorized and trusted partner of the venue, offering curated experiences to enjoy this attraction.</p>
         </div>
         <div className="homeTopImgContainer">
-            <img src={image} alt="" />
+            <img src={"https://i.postimg.cc/FRRVHmgF/homeMain.jpg"} alt="" />
         </div>
     </section>
   )

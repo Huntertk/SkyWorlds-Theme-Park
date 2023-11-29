@@ -11,20 +11,20 @@ const HomeWhyVisit = () => {
             <div className="listData">
 
                     <p>
-                        <span>Zones : </span>
-                        Genting SkyWorlds has nine exciting movie and adventure ‘worlds’, each hosting exciting rides and attractions. Some of the famous zones are Eagle Mountain, Central Park, Robots Rivet Town, Liberty Lane, Ice Age, Andromeda Base & more. 
+                        <span>Diverse Zones : </span>
+                        Genting SkyWorlds boasts nine exciting movie and adventure zones, including Eagle Mountain, Central Park, Robots Rivet Town, Liberty Lane, Ice Age, and Andromeda Base. Each zone offers a unique set of thrilling rides and attractions. 
                     </p>
                     <p>
                         <span>Lake of Dreams : </span>
-                        Enjoy a stunning water fountain show at Lake of Dreams in Central Park. You can enjoy the outdoor entertainment event and take photos and unwind with your friends and family. 
+                        Experience the mesmerizing water fountain show at the Lake of Dreams in Central Park. This outdoor entertainment event provides the perfect backdrop for capturing unforgettable moments with friends and family. 
                     </p>
                     <p>
-                        <span>SkySymphony : </span>
-                        Join the spectacular audio, visual, and motion graphics show, SkySymphony, at SkyAvenue. This performance will leave you spellbound with its visual storytelling. Watch as 1000 winch balls get suspended from a four-story high ceiling as they transform into a magic platform.
+                        <span>SkySymphony Show : </span>
+                        Be captivated by the spectacular SkySymphony show at SkyAvenue. This audio, visual, and motion graphics performance features 1000 winch balls suspended from a four-story high ceiling, transforming into a magical platform with captivating visual storytelling.
                     </p>
                     <p>
-                        <span>FUHU Shack : </span>
-                        Head to FUHU Shack in Central Park to grab some Asian snacks. Visitors can choose vegetarian options too. Enjoy beverages, desserts, and alcoholic drinks, and do not forget the signature dish: Roasted Duck Rice.
+                        <span>FUHU Shack Delights : </span>
+                        Head to the FUHU Shack in Central Park for a gastronomic adventure. Indulge in a variety of Asian snacks, including vegetarian options, and treat yourself to a delightful array of beverages, desserts, and alcoholic drinks. Don't miss out on the signature dish: Roasted Duck Rice.
                     </p>
             </div>
         </div>

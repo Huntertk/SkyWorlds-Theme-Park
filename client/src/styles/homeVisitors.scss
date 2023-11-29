@@ -14,7 +14,9 @@
 
         li{
             margin: 0.51rem 0;
-
+            span{
+                font-weight: 700;
+            }
             &::marker{
                 font-size: 1.2rem;
             }

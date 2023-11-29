@@ -21,7 +21,7 @@ const ThingsTodo = () => {
   return (
     <section className='HomeBuffetOptionMainContainer'>
         <h1>Things To Do Genting SkyWorlds Theme Park</h1>
-        <p>Genting SkyWorlds is a theme park for movie lovers. You can explore rides and attractions themed on popular movies and also have a fun time as there are multiple things to do at the theme park.</p>
+        <p>Designed for movie enthusiasts, Genting SkyWorlds offers a captivating experience with rides and attractions inspired by beloved films. Enjoy a delightful time as the theme park provides a variety of engaging activities for visitors to explore and enjo</p>
         <div className="cardMainContainer">
             <Cards />
         </div>
