@@ -79,7 +79,7 @@ const bookingSlice = createSlice({
         },
 
         generalTotalAmount: (state) => {
-            state.generalTotal = state.generalCount * 75
+            state.generalTotal = state.generalCount * 2
             // setBookingDetailsFromLocalStorage(state)
         },
         adultTotalAmount: (state) => {
