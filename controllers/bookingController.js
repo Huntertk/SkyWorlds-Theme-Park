@@ -40,7 +40,7 @@ export const createBooking = async (req, res) => {
             ],
             mode: 'payment',
             success_url: `https://skyworlds-theme-pak.onrender.com/${responseClientUrl}`,
-            cancel_url: 'https://skyworlds-theme-pak.onrender.com//',
+            cancel_url: 'https://skyworlds-theme-pak.onrender.com/',
             payment_intent_data: {
                 setup_future_usage: 'off_session',
                 description: 'Booking payment',
@@ -438,7 +438,7 @@ export const successBooking = async (req, res, next) => {
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td align="center" class="esd-block-text">
-                                                                                            <p style="font-size: 16px; color: #f26823;"><em><strong>&nbsp; &nbsp; &nbsp; &nbsp;Senior X ${req.body.generalCount} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MYR ${req.body.generalTotal}</strong></em></p>
+                                                                                            <p style="font-size: 16px; color: #f26823;"><em><strong>&nbsp; &nbsp; &nbsp; &nbsp;General X ${req.body.generalCount} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MYR ${req.body.generalTotal}</strong></em></p>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr>
