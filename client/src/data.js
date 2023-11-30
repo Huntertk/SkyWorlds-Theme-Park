@@ -166,7 +166,7 @@ export const cardData = [
 export const cardHighLightsDetails = [
     {
         id: uuidv4(),
-        image: "https://i.postimg.cc/RCYXq3Dk/genting-Sky-Worlds-Theme-Park-Skytropolis-Indoor-Theme-Park-Img-Three.jpg",
+        image: "https://i.postimg.cc/cLwpMDTH/shop-studio-emporium-1.jpg",
         title:"Studio Plaza",
         desc:"Studio Plaza is a celebration of the cinema. You will come across your favorite movie characters as they are displayed in the Plaza, carved into the interiors. Explore the golden interiors, 360-degree Legends Cinema, diners, and retail stores to immerse yourself in a unique experience."
     },
