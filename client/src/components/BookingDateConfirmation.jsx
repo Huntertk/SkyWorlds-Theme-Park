@@ -29,7 +29,6 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen}) 
     }
     const day = new Date().getDay()
     const date = new Date(Date.now()).getDate()
-    console.log(new Date(Date.now() + 1000 *60 *60 *24).getDate());
     return (
         <div className="dateBtnContainer">
            <button className={selectedDate.toString() == new Date(Date.now())  ? "active" : ""}
