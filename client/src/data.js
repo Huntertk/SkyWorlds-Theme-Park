@@ -308,28 +308,38 @@ export const preferenceData = [
 export const homeFAQ = [
     {
         id: uuidv4(),
-        ques:"Is it worth visiting Genting SkyWorlds Theme Park?",
-        ans:"Absolutely! Genting SkyWorlds has been described as 'top-notch entertainment' for several reasons. Its unique location (1800m above sea level!), wide assortment of 26 rides for both children and adults, and multiple food options makes it one of the most widely-visited amusement parks in Malaysia. Genting SkyWorlds has built an immersive park themed around popular movie franchises such as Ice Age, Planet of the Apes, Night at the Museum, and more!"
+        ques:"Which Tickets are Ideal for Genting SkyWorlds?",
+        ans:"Choose between standard admission for unlimited access to all rides and attractions, or explore combo tickets for entry to Genting SkyWorlds and neighboring attractions like Genting Skytropolis and Genting Cable Car!"
     },
     {
         id: uuidv4(),
-        ques:"Where can I get Genting SkyWorlds Theme Park tickets?",
-        ans:"You can opt to buy your tickets either at the physical ticket counter, or from a trusted online partner. Keep in mind due to the park's immense popularity, you can expect to long waiting lines at the ticket counter. For this, we recommend booking your tickets online in advance so as to avoid the lines and simply sail through with your confirmed e-ticket. An added benefit of booking your tickets online is that you enjoy exclusive discounts and offers."
+        ques:"Are Discounts Available on Genting SkyWorlds Tickets?",
+        ans:"Certainly! Enjoy discounts of up to 20% on admission tickets. Additionally, children under 110cm and seniors over 60 receive special reduced pricing."
     },
     {
         id: uuidv4(),
-        ques:"Which Genting SkyWorlds tickets should I buy?",
-        ans:"You can choose to book a standard admission ticket which includes unlimited access to all rides and attractions at this theme park, or opt for combo tickets which not only include entry to Genting SkyWorlds but its neighbouring attractions such as Genting Skytropolis, Genting Cable Car and more!"
+        ques:"When is the Best Time to Visit Genting SkyWorlds?",
+        ans:"The park operates daily from 11:00 AM to 6:00 PM. For a more relaxed experience, consider avoiding the peak season from June to September. Optimal times are during the off-season from September to November and January to March, while April and May can be warmer."
     },
     {
         id: uuidv4(),
-        ques:"When should I visit Genting SkyWorlds theme park?",
-        ans:"The park is open daily from 11:00 AM to 6:00 PM. If you're looking to avoid the crowds, it's best to skip the months between June to September. Due to the holiday season, you can expect large crowds visiting the park. It's best to visit during the off season between September to November and January to March. The months of April and May tend to get quite hot as well."
+        ques:"How Can I Reach Genting SkyWorlds Theme Park?",
+        ans:"Located in Genting Highlands, Pahang, an hour from Kuala Lumpur, use Google Maps for directions. Choose from options like the Genting Express bus, driving, or the convenient Genting Awana Cable Car, with SkyAvenue Station just minutes away on foot."
     },
     {
         id: uuidv4(),
-        ques:"How do I get to Genting SkyWorlds theme park?",
-        ans:"This theme park is located in the tourist and resort region of Genting Highlands in Pahang, about an hour from Kuala Lumpur."
+        ques:"How Long Should I Plan for Genting SkyWorlds?",
+        ans:"With 26 rides across nine zones, plan to spend 4-6 hours for a comprehensive experience covering the top attractions."
+    },
+    {
+        id: uuidv4(),
+        ques:"Are Strollers and Wheelchairs Available at Genting SkyWorlds Theme Park?",
+        ans:"Certainly! Visitors can conveniently rent strollers and wheelchairs within the park."
+    },
+    {
+        id: uuidv4(),
+        ques:"What are the Must-Try Rides & Attractions at Genting SkyWorlds?",
+        ans:"Explore a variety of exciting rides suitable for all ages. Highly recommended experiences include: Invasion of the Planet of the Apes Independence Day: Defiance ESD Global Defender Rio Carnaval Chaos Rivet Town Roller Terraform Tower Challenge"
     },
 ]
 
