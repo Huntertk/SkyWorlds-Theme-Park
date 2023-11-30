@@ -172,7 +172,7 @@ export const cardHighLightsDetails = [
     },
     {
         id: uuidv4(),
-        image: "https://i.postimg.cc/V6WPmqgP/eagle-Mountain-Img.jpg",
+        image: "https://i.postimg.cc/pdvg0D1B/Eagle-Mountain-Overall-View-1.jpg",
         title:"Eagle Mountain",
         desc:"Soar to new heights amidst the Eagle Mountain Zone, where thrilling rides await against the backdrop of breathtaking mountain scenery. Experience an adrenaline-pumping adventure with panoramic views."
     },  
@@ -184,7 +184,7 @@ export const cardHighLightsDetails = [
     },  
     {
         id: uuidv4(),
-        image: "https://i.postimg.cc/90X5MDgR/andromeda-Base-Img.jpg",
+        image: "https://i.postimg.cc/43QBCm26/Whats-App-Image-2023-11-30-at-3-43-34-PM.jpg",
         title:"Andromeda Base Cosmic Journey",
         desc:"Embark on a cosmic journey in the Andromeda Base, a space-themed zone that transports visitors beyond the stars. Engage with futuristic rides and interactive exhibits that make this zone an out-of-this-world experience."
     },  
@@ -196,19 +196,19 @@ export const cardHighLightsDetails = [
     },   
     {
         id: uuidv4(),
-        image: "https://i.postimg.cc/RVrpX6Lc/robots-Revet-Town-Img.jpg",
+        image: "https://i.postimg.cc/ThMVSxxL/Robots-Rivet-Town-Overview-1.jpg",
         title:"Robots Revet Town Technology",
         desc:"Immerse yourself in the futuristic world of Robots Rivet Town, a technological marvel showcasing cutting-edge innovations. Marvel at the seamless harmony between man and machine, making this zone a must-visit for tech enthusiasts."
     },  
     {
         id: uuidv4(),
-        image: "https://i.postimg.cc/jjRhByD7/outdoor-Theme-Park-Img-Four.jpg",
+        image: "https://i.postimg.cc/j524nvv5/Whats-App-Image-2023-11-30-at-3-47-24-PM.jpg",
         title:"Rio",
         desc:"Slip into the ultimate fun at Rio and explore the neighborhood of Santa Teresa while listening to Samba music. Make sure to take a spin at the colorful Rio Carnival Chaos teacup ride."
     },  
     {
         id: uuidv4(),
-        image: "https://i.postimg.cc/Wz9RJsx9/epicImg.jpg",
+        image: "https://i.postimg.cc/VNDFN2qp/Whats-App-Image-2023-11-30-at-3-49-19-PM.jpg",
         title:"Epic",
         desc:"Step into the secret kingdom at Epic and Make a splash in the water as you tour the Moonhaven on Mub and Grub's boat ride. Enjoy the company of Nod, M.K, and Mandrake as you sail past the kingdom."
     },  
@@ -251,7 +251,7 @@ export const thingsTodo = [
         id: uuidv4(),
         title:"Stores",
         desc:"Explore the stores in all Genting SkyWorlds Theme Park zones to buy movie merchandise, collectibles, and galactic objects. Shop for toys in every movie-inspired zone, or pose for photo memorabilia in a photo kiosk.",
-        image: "https://i.postimg.cc/zG8tYsMv/stores-Img.jpg"
+        image: "https://i.postimg.cc/cLwpMDTH/shop-studio-emporium-1.jpg"
     },
     {
         id: uuidv4(),
