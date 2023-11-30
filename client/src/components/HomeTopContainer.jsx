@@ -10,7 +10,7 @@ const HomeTopContainer = () => {
             <p>TravelVago is an authorized and trusted partner of the venue, offering curated experiences to enjoy this attraction.</p>
         </div>
         <div className="homeTopImgContainer">
-            <img src={"https://i.postimg.cc/FRRVHmgF/homeMain.jpg"} alt="" />
+            <img src={"https://i.postimg.cc/GpZt9VMg/Skyworld-1.webp"} alt="" />
         </div>
     </section>
   )

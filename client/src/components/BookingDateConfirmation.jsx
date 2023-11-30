@@ -29,6 +29,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen}) 
     }
     const day = new Date().getDay()
     const date = new Date(Date.now()).getDate()
+    console.log(new Date(Date.now() + 1000 *60 *60 *24).getDate());
     return (
         <div className="dateBtnContainer">
            <button className={selectedDate.toString() == new Date(Date.now())  ? "active" : ""}
@@ -36,7 +37,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen}) 
            disabled={getDayName(new Date(Date.now())) === 'Tue'}
            >
             <span>
-                {date}
+                {new Date(Date.now()).getDate()}
             </span>
             <span>
                 {getDayName(new Date(Date.now()))}
@@ -48,7 +49,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen}) 
            disabled={getDayName(new Date(Date.now() + 1000 * 60 *60 *24 )) === 'Tue'}
            >
             <span>
-                {date + 1}
+            {new Date(Date.now() + 1000 * 60 * 60 * 24 ).getDate()}
             </span>
             <span>
             {getDayName(new Date(Date.now() + 1000 * 60 *60 *24))}
@@ -60,7 +61,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen}) 
            disabled={getDayName(new Date(Date.now() + 1000 * 60 *60 * 24 * 2)) === 'Tue'}
            >
             <span>
-                {date + 2}
+            {new Date(Date.now() + 1000 * 60 * 60 * 24 *2  ).getDate()}
             </span>
             <span>
             {getDayName(new Date(Date.now() + 1000 * 60 *60 * 24 * 2))}
@@ -72,7 +73,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen}) 
            disabled={getDayName(new Date(Date.now()+ 1000 * 60 *60 * 24 * 3)) === 'Tue'}
            >
             <span>
-                {date + 3}
+            {new Date(Date.now() + 1000 * 60 * 60 * 24 *3  ).getDate()}
             </span>
             <span>
             {getDayName(new Date(Date.now() + 1000 * 60 *60 * 24 * 3))}
