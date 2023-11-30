@@ -13,6 +13,10 @@
         padding: 1rem;
         gap: 10px;
         background-color: $primaryModalColor;
+        .cardTopStatusContent{
+            display: flex;
+            justify-content:  space-between;
+        }
 
         .personCount{
             display: flex;
@@ -52,8 +56,8 @@
 
 @media screen and (min-width: 767px) {
     .allBookingsContainer {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }

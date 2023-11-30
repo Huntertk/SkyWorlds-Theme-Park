@@ -18,14 +18,15 @@ const BookingCard = (props) => {
         email,
         adultCount,
         childCount,
-        infantCount,
+        generalCount,
         seniorCount,
         bookingStatus,
         createdAt,
         updatedAt,
         totalAmount,
         bookingId,
-        bookingType,
+        bookingTitle,
+        prefrence
     }  = props.booking
 
     const [newBookingStatus, setNewBookingStatus] = useState("")
@@ -40,11 +41,15 @@ const BookingCard = (props) => {
   }
   return (
     <div className="cardContainer">
-        <span>{props.index + 1}</span>
+      <div className='cardTopStatusContent'>
+        <span>{props.index + 1} </span>
+        <span>#{bookingStatus}</span>
+      </div>
         <span>Booking ID: #{bookingId}</span>
         <span>Order ID: {_id}</span>
           <p>Date of Reservation : {bookingDate}</p>
-          <p>Reservation-Type : {bookingType === 'dinner' ? "Atmosphere 360 Dinner Buffet" : bookingType === 'lunch' ? "Atmosphere 360 Lunch Buffet" : bookingType === 'tea' && "Atmosphere 360 Tea Buffet" }</p>
+          <p>Reservation-Type : {bookingTitle}</p>
+          { prefrence && <p>Reservation-Type : {prefrence}</p>}
           <p>Booked By : {name}</p>
           <p>Contact : {mobileNumber}</p>
           <p>Email : {email}</p>
@@ -52,7 +57,7 @@ const BookingCard = (props) => {
           <div className="personCount">
             <p>Adult X {adultCount}</p>
             <p>Child X {childCount}</p>
-            <p>Infant X {infantCount}</p>
+            <p>General X {generalCount}</p>
             <p>Senior X {seniorCount}</p>
           </div>
           <div className="bookingStatus">
