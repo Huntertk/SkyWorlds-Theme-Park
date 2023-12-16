@@ -341,6 +341,11 @@ export const homeFAQ = [
         ques:"What are the Must-Try Rides & Attractions at Genting SkyWorlds?",
         ans:"Explore a variety of exciting rides suitable for all ages. Highly recommended experiences include: Invasion of the Planet of the Apes Independence Day: Defiance ESD Global Defender Rio Carnaval Chaos Rivet Town Roller Terraform Tower Challenge"
     },
+    {
+        id: uuidv4(),
+        ques:"If my child is more than 110cm, can i buy child ticket?",
+        ans:"No Child above 110cm will be considered as adult."
+    },
 ]
 
 
@@ -360,12 +365,47 @@ export const helpCenterBookingFAQ = [
         ques:"Can I book for a group?",
         ans:"Of course! We welcome group bookings. When selecting an experience, you can specify the number of participants, and our system will guide you through the process to ensure everyone has a fantastic time."
     },
+]
+
+
+export const addQues = [
     {
         id: uuidv4(),
-        ques:"The best time to visit Atmosphere 360?",
-        ans:"The Dinner dining will be ideal to witness the City of Light."
+        ques:"Operating Hours ?",
+        ans:[
+            "Skyworld : 11am-6pm, Everyday(Closed every Tuesday except ", 
+        ]
+    },
+    {
+        id: uuidv4(),
+        ques:"Public/School Holiday",
+        ans:[
+            "Skytropolis: 2pm-9pm, Mon-Thu | 2pm-10pm, Fri-Sun", 
+            "Awana Skyway: 7am-11pm everyday", 
+        ]
+    },
+    {
+        id: uuidv4(),
+        ques:"For Your Concern",
+        ans:[
+            "Adult age: 13 to 59 years old.",
+            "Child height more than 110cm, need to purchase Adult Ticket.",
+        ]
+    },
+    {
+        id: uuidv4(),
+        ques:"Refund/Cancellation Policy",
+        ans:[
+            "No cancellation and refund are allowed once purchased"
+        ]
+    },
+    {
+        id: uuidv4(),
+        ques:"Redemption Guide",
+        ans:["Upon arrival, show your ticket/e-voucher at the counter"]
     },
 ]
+
 
 export const helpCenterCancellationFAQ = [
     {

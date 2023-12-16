@@ -123,7 +123,7 @@ const PaxModal = ({selectedDate}) => {
                 />
                 <Pax  
                 category ={"Child"} 
-                ageText={"6 to 12 yrs"} 
+                ageText={"3 to 12 yrs"} 
                 price={150}
                 count={childCount}
                 actionType={{
@@ -134,7 +134,7 @@ const PaxModal = ({selectedDate}) => {
                 />
                 <Pax  
                 category ={"Senior"} 
-                ageText={"Above 59 yrs"} 
+                ageText={"Above 60 yrs"} 
                 price={150} 
                 count={seniorCount}
                 actionType={{

@@ -81,7 +81,7 @@ const HomeCard = ({data}) => {
                 <BiSolidDollarCircle />
                 <div className="cancelPolicyContent">
                     <p>Cancellation policy</p>
-                    <span>Cancellation is possible until 24 hours before your visit.</span>
+                    <span>These tickets can't be cancelled or rescheduled</span>
                 </div>
             </div>
             </div>

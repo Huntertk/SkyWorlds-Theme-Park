@@ -7,7 +7,7 @@ import ThingsTodo from './ThingsTodo'
 import HomeVisitorTips from './HomeVisitorTips'
 import HomeFaq from './HomeFaq'
 import HomeMap from './HomeMap'
-
+import HomeAdditionalInformation from './HomeAdditionalInformation'
 
 export {
     HomeTopContainer,
@@ -18,5 +18,6 @@ export {
     HomeVisitorTips,
     HomeFaq,
     HomeMap,
-    ThingsTodo
+    ThingsTodo,
+    HomeAdditionalInformation
 }

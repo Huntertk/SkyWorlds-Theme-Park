@@ -22,12 +22,18 @@ import HelpCenter from './pages/HelpCenter'
 import ConfirmBooking from './pages/ConfirmBooking'
 import {useSelector} from 'react-redux'
 import ErrorPage from './pages/ErrorPage'
+import ManageDates from './pages/adminPage/ManagesDates'
+import BookTypeOneDate from './pages/adminPage/BookTypeOneDate'
+import BookTypeTwoDate from './pages/adminPage/BookTypeTwoDate'
+import BookTypeThreeDate from './pages/adminPage/BookTypeThreeDate'
+import BookTypeFourDate from './pages/adminPage/BookTypeFourDate'
+import BookTypeFiveDate from './pages/adminPage/BookTypeFiveDate'
 
 const App = () => {
   const {responseClientUrl} = useSelector(state => state.booking)
   return (
     <BrowserRouter>
-    <ToastContainer />
+    <ToastContainer autoClose={3000} />
       <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<Home />} />
@@ -48,6 +54,12 @@ const App = () => {
             <Route path="/admin/completed-booking" element={<CompletedBooking />} />
             <Route path="/admin/pending-booking" element={<PendingBooking />} />
             <Route path="/admin/cancelled-booking" element={<CancelledBooking />} />
+            <Route path="/admin/manage-dates" element={<ManageDates />} />
+            <Route path="/admin/manage-dates/booktype-one" element={<BookTypeOneDate />} />
+            <Route path="/admin/manage-dates/booktype-two" element={<BookTypeTwoDate />} />
+            <Route path="/admin/manage-dates/booktype-three" element={<BookTypeThreeDate />} />
+            <Route path="/admin/manage-dates/booktype-four" element={<BookTypeFourDate />} />
+            <Route path="/admin/manage-dates/booktype-five" element={<BookTypeFiveDate />} />
           </Route>
         </Route>
         <Route path="*" element={<ErrorPage />} />

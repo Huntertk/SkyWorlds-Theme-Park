@@ -7,7 +7,8 @@ import {
     HomeHighlights,
     HomeVisitorTips,
     HomeFaq,
-    HomeMap
+    HomeMap,
+    HomeAdditionalInformation
 } from '../components/index'
 import ThingsTodo from '../components/ThingsTodo'
 import { initialRender } from '../features/booking/bookingSlice'
@@ -28,7 +29,8 @@ const Home = () => {
       {/* <HomWhatIsTheBest /> */}
       <HomeHighlights />
       <ThingsTodo />
-      <HomeVisitorTips />
+      <HomeAdditionalInformation />
+      {/* <HomeVisitorTips /> */}
       <HomeMap />
       <HomeFaq />
      </section>
