@@ -57,7 +57,7 @@ const BookTypeTwoDate = () => {
 
   return (
     <div className='mainDateManageContainer'>
-        <h1>Dinner Date Manage</h1>
+        <h1>Combo: Genting Awana SkyWay (One-way) + Skytropolis Indoor Theme Park Tickets <br /> Date Manage</h1>
         <DayPicker
                 defaultMonth={new Date(Date.now())}
                 mode="single"
