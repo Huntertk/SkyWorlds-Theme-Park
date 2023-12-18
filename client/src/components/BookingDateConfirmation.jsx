@@ -105,8 +105,6 @@ const BookingDateConfirmation = () => {
         if(!type){
             return <Navigate to="/" />
         }
-        console.log(type);
-
         const getBookTypeOneBlockDates = async () => {
             try {
                 const {data} = await axios.get('/api/v1/booktype-one-dates-manage/block-dates')

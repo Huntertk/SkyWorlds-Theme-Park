@@ -79,7 +79,7 @@ const BookTypeOneDate = () => {
           Blocked Dates
         </h1>
         <div className="">
-        {blockedDates.map((d, i) => {
+        {blockedDates?.map((d, i) => {
           return <button key={i}
           onClick={() => removeBlockedDate(d._id)}
           disabled={isLoading}
