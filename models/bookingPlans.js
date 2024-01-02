@@ -12,7 +12,7 @@ const bookingPlanSchema = new mongoose.Schema({
     },
     image:{
         type:[String]
-    }
+    },
 }, {timestamps: true})
 
 const BookingPlan = mongoose.model('bookingPlan', bookingPlanSchema)

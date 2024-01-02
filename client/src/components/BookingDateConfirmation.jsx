@@ -39,8 +39,8 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
     const date = new Date(Date.now()).getDate()
     return (
         <div className="dateBtnContainer">
-           <button className={selectedDate.toString() == new Date(Date.now())  ? "active" : ""}
-           onClick={() => setSelectedDate(new Date(Date.now()))}
+           <button className={selectedDate?.toString() == new Date(Date.now())  ? "active" : ""}
+           onClick={() => setSelectedDate(new Date(Date.now()+1000 *60 *60 *24))}
            disabled={disabledBtnToDate(1000 *60 *60 *24)}
            >
             <span>
@@ -51,7 +51,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
             </span>
            </button>
            <button 
-           className={selectedDate.toString() == new Date(Date.now() + 1000*60*60*24*2)  ? "active" : ""}
+           className={selectedDate?.toString() == new Date(Date.now() + 1000*60*60*24*2)  ? "active" : ""}
            onClick={() => setSelectedDate(new Date(Date.now() + 1000*60*60*24 *2))}
            disabled={disabledBtnToDate( 1000 * 60 *60 *24 *2 )}
            >
@@ -63,7 +63,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
             </span>
             </button>
            <button  
-            className={selectedDate.toString() == new Date(Date.now() + 1000*60*60*24 * 3)  ? "active" : ""}
+            className={selectedDate?.toString() == new Date(Date.now() + 1000*60*60*24 * 3)  ? "active" : ""}
            onClick={() => setSelectedDate(new Date(Date.now() + 1000*60*60*24 * 3))}
            disabled={disabledBtnToDate( 1000 * 60 *60 *24 *3 )}
            >
@@ -75,7 +75,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
             </span>
             </button>
            <button 
-            className={selectedDate.toString() == new Date(Date.now() + 1000*60*60*24 *4)  ? "active" : ""}
+            className={selectedDate?.toString() == new Date(Date.now() + 1000*60*60*24 *4)  ? "active" : ""}
            onClick={() => setSelectedDate(new Date(Date.now() + 1000*60*60*24 * 4))}
            disabled={disabledBtnToDate( 1000 * 60 *60 *24 *4)}
            >
@@ -105,6 +105,7 @@ const BookingDateConfirmation = () => {
         if(!type){
             return <Navigate to="/" />
         }
+        
         const getBookTypeOneBlockDates = async () => {
             try {
                 const {data} = await axios.get('/api/v1/booktype-one-dates-manage/block-dates')
@@ -154,7 +155,7 @@ const BookingDateConfirmation = () => {
         const navigate = useNavigate()
 
         useEffect(() => {
-            if(type==='bookTypeOne'){
+            if(type === 'bookTypeOne'){
                 getBookTypeOneBlockDates()
                 return 
             } else if(type === 'bookTypeTwo'){
@@ -192,25 +193,25 @@ const BookingDateConfirmation = () => {
             hidden={isPastDate}
             onSelect={setSelectedDate}
             fromMonth={defaultMonth}
-            toDate={new Date(Date.now() + 1000 *60*60*24*60)}
+            // toDate={new Date(Date.now() + 1000 *60*60*24*60)}
             disabled={disabledDays}
             />
             </div>
             {
-                selectedDate && type === 'bookTypeOne' && <PreferenceTour /> 
+                selectedDate && type === 'bookTypeOne' && <PreferenceTour selectedDate={selectedDate}/> 
             }
             {/* <PreferenceTour /> */}
             <div className="selectedDate">
                 {
                     selectedDate ? <>
                     <div className='prefrenceAndDateContainer'>
-                        <p>{
+                        {/* <p>{
                             type === 'bookTypeOne' && pref ? pref : 
                             type === 'bookTypeTwo' ? "Combo: Genting Awana SkyWay (One-way) + Skytropolis Indoor Theme Park Tickets" : 
                             type === 'bookTypeThree' ? "Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets" : 
                             type === 'bookTypeFour' ? "Combo: Genting Awana SkyWay (One-way) + Skyworld Outdoor Theme Park Tickets" : 
                             type === 'bookTypeFive' && "Combo: Genting Awana Skyway (One-way) + Skyworld Outdoor + Skytropolis Indoor Theme Park"
-                        }</p>
+                        }</p> */}
                     <p>You selected {format(selectedDate, 'PPP')}.</p>
                     </div>
                     {

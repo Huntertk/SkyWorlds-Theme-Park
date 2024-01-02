@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/homeCardContainer.scss'
-// import { cardData } from '../data'
+import { cardData } from '../data'
 import HomeCard from './HomeCard';
 import axios from 'axios'
 import LoadingSpinner from './LoadingSpinner'
@@ -29,6 +29,7 @@ const HomeCardContainer = () => {
   if(!cardData){
     return <LoadingSpinner />
   }
+  console.log(cardData);
   return (
     <section className='HomeCardMainContainer'>
         {cardData.map((data) => {

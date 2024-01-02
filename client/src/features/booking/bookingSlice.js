@@ -27,7 +27,9 @@ const initialState = {
     bookingDay: "",
     bookingId:"",
     pref:"",
-    bookingTitle:""
+    bookingTitle:"",
+    pricing:"",
+    prefrenceOpt:""
 }
 
 
@@ -37,67 +39,72 @@ const bookingSlice = createSlice({
     reducers:{
         adultCountIncrease : (state, action) => {
             state.adultCount = state.adultCount + 1
-            // setBookingDetailsFromLocalStorage(state)
         },
         adultCountDecrease : (state, action) => {
             state.adultCount = state.adultCount - 1
-            // setBookingDetailsFromLocalStorage(state)
         },
 
 
         generalCountIncrease : (state, action) => {
             state.generalCount = state.generalCount + 1
-            // setBookingDetailsFromLocalStorage(state)
         },
         generalCountDecrease : (state, action) => {
             state.generalCount = state.generalCount - 1
-            // setBookingDetailsFromLocalStorage(state)
         },
         childCountIncrease : (state, action) => {
             state.childCount = state.childCount + 1
-            // setBookingDetailsFromLocalStorage(state)
         },
         childCountDecrease : (state, action) => {
             state.childCount = state.childCount - 1
-            // setBookingDetailsFromLocalStorage(state)
         },
         infantCountIncrease : (state, action) => {
             state.infantCount = state.infantCount + 1
-            // setBookingDetailsFromLocalStorage(state)
         },
         infantCountDecrease : (state, action) => {
             state.infantCount = state.infantCount - 1
-            // setBookingDetailsFromLocalStorage(state)
         },
         seniorCountIncrease : (state, action) => {
             state.seniorCount = state.seniorCount + 1
-            // setBookingDetailsFromLocalStorage(state)
         },
         seniorCountDecrease : (state, action) => {
             state.seniorCount = state.seniorCount - 1
-            // setBookingDetailsFromLocalStorage(state)
         },
 
         generalTotalAmount: (state) => {
             state.generalTotal = state.generalCount * 75
-            // setBookingDetailsFromLocalStorage(state)
         },
         adultTotalAmount: (state) => {
             //First
             if(state.type === 'bookTypeOne'){
-                if(state.pref === "1-Day Pass") {
-                    state.adultTotal = state.adultCount *  151
+                if(state.pref === "1 Day Pass Off Peak") {
+                    
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.offPeak[0].price.adult
                    return 
-                } else if(state.pref === "Combo: 1-Day Pass + Two-Way Standard Gondola Ride"
+                } else if(state.pref === "1 Day Pass Peak"){
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.Peak[0].price.adult
+                    return 
+                } 
+                else if(state.pref === "Combo: 1-Day Pass + Two-way Standard Gondola Ride Off Peak"
                 ){
-                    state.adultTotal = state.adultCount *  171
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.offPeak[1].price.adult
                    return
-                } else if(state.pref === "1-Day Pass with Photo"){
-                    state.adultTotal = state.adultCount *  179
+                } else if(state.pref === "Combo: 1-Day Pass + Two-way Standard Gondola Ride Peak"
+                ){
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.Peak[1].price.adult
+                    return
+                } 
+                // else if(state.pref === "1-Day Pass with Photo"){
+                    //     state.adultTotal = state.adultCount *  179
+                    //    return 
+                    // } 
+                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak"
+                    ) {
+                        state.adultTotal = state.adultCount *  state.prefrenceOpt.offPeak[2].price.adult
                    return 
-                } else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets"
-                ) {
-                    state.adultTotal = state.adultCount *  215
+                }
+                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Peak"
+                    ) {
+                        state.adultTotal = state.adultCount *  state.prefrenceOpt.Peak[2].price.adult
                    return 
                 } //Third
             } else if(state.type === 'bookTypeThree'){
@@ -112,26 +119,41 @@ const bookingSlice = createSlice({
                 state.adultTotal = state.adultCount *  225
                 return
             }
-            // setBookingDetailsFromLocalStorage(state)
         },
         childTotalAmount: (state) => {
             //First
             if(state.type === 'bookTypeOne'){
-                if(state.pref === "1-Day Pass") {
-                    state.childTotal = state.childCount *  128
+                if(state.pref === "1 Day Pass Off Peak") {
+                    
+                    state.childTotal = state.childCount *  state.prefrenceOpt.offPeak[0].price.child
                    return 
-                } else if(state.pref === "Combo: 1-Day Pass + Two-Way Standard Gondola Ride"
+                } else if(state.pref === "1 Day Pass Peak"){
+                    state.childTotal = state.childCount *  state.prefrenceOpt.Peak[0].price.child
+                    return 
+                } 
+                else if(state.pref === "Combo: 1-Day Pass + Two-way Standard Gondola Ride Off Peak"
                 ){
-                    state.childTotal = state.childCount *  148
+                    state.childTotal = state.childCount *  state.prefrenceOpt.offPeak[1].price.child
                    return
-                } else if(state.pref === "1-Day Pass with Photo"){
-                    state.childTotal = state.childCount *  153
+                } else if(state.pref === "Combo: 1-Day Pass + Two-way Standard Gondola Ride Peak"
+                ){
+                    state.childTotal = state.childCount *  state.prefrenceOpt.Peak[1].price.child
+                    return
+                } 
+                // else if(state.pref === "1-Day Pass with Photo"){
+                    //     state.adultTotal = state.adultCount *  179
+                    //    return 
+                    // } 
+                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak"
+                    ) {
+                        state.childTotal = state.childCount *  state.prefrenceOpt.offPeak[2].price.child
                    return 
-                } else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets"
-                ) {
-                    state.childTotal = state.childCount *  190
+                }
+                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Peak"
+                    ) {
+                        state.childTotal = state.childCount *  state.prefrenceOpt.Peak[2].price.child
                    return 
-                } //Third 
+                } //Third
             }  else if(state.type === 'bookTypeThree'){
                 state.childTotal = state.childCount *  190
                 return 
@@ -144,28 +166,42 @@ const bookingSlice = createSlice({
                 state.childTotal = state.childCount *  200
                 return
             }
-
-            // setBookingDetailsFromLocalStorage(state)
         },
         seniorTotalAmount: (state) => {
             //First
             if(state.type === 'bookTypeOne'){
-                if(state.pref === "1-Day Pass") {
-                    state.seniorTotal =  state.seniorCount *  128
+                if(state.pref === "1 Day Pass Off Peak") {
+                    
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.offPeak[0].price.senior
                    return 
-                } else if(state.pref === "Combo: 1-Day Pass + Two-Way Standard Gondola Ride"
+                } else if(state.pref === "1 Day Pass Peak"){
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.Peak[0].price.senior
+                    return 
+                } 
+                else if(state.pref === "Combo: 1-Day Pass + Two-way Standard Gondola Ride Off Peak"
                 ){
-                    state.seniorTotal =  state.seniorCount *  148
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.offPeak[1].price.senior
                    return
-                } else if(state.pref === "1-Day Pass with Photo"){
-                    state.seniorTotal =  state.seniorCount *  153
+                } else if(state.pref === "Combo: 1-Day Pass + Two-way Standard Gondola Ride Peak"
+                ){
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.Peak[1].price.senior
+                    return
+                } 
+                // else if(state.pref === "1-Day Pass with Photo"){
+                    //     state.adultTotal = state.adultCount *  179
+                    //    return 
+                    // } 
+                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak"
+                    ) {
+                        state.seniorTotal = state.seniorCount *  state.prefrenceOpt.offPeak[2].price.senior
                    return 
-                } else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets"
-                ) {
-                    state.seniorTotal =  state.seniorCount *  190
+                }
+                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Peak"
+                    ) {
+                        state.seniorTotal = state.seniorCount *  state.prefrenceOpt.Peak[2].price.senior
                    return 
-                } //Third 
-            } else if(state.type === 'bookTypeThree'){
+                } //Third
+            }  else if(state.type === 'bookTypeThree'){
                 state.seniorTotal = state.seniorCount *  190
                 return 
             } else if(state.type === 'bookTypeFour'){
@@ -177,23 +213,22 @@ const bookingSlice = createSlice({
                 state.seniorTotal = state.seniorCount *  200
                 return
             }
-            // setBookingDetailsFromLocalStorage(state)
         },
 
         setPreference: (state, action) => {
-            state.pref = action.payload.pref
-            // setBookingDetailsFromLocalStorage(state)
+            state.pref = action.payload.preferenceTitle
+        },
+        setPreferenceOption: (state, action) => {
+            state.prefrenceOpt = action.payload.preference
         },
         countTotalBookingAmount: (state, action) => {
             state.totalAmount = state.adultTotal + state.childTotal + state.seniorTotal + state.generalTotal
             state.bookingResponse = ""
-            // setBookingDetailsFromLocalStorage(state)
         },
         setBookingDate: (state, action) => {
             state.bookingDate = action.payload.selectedBookingDate
             state.bookingResponse = ""
             state.bookingDay = action.payload.selectedDay.split(' ')[0]
-            // setBookingDetailsFromLocalStorage(state)
         },
         openPaxModel: (state) => {
             state.isPaxModal = true
@@ -232,8 +267,9 @@ const bookingSlice = createSlice({
         },
         choosingBooking: (state, action) => {
             state.type = action.payload.type
+            state.pricing = action.payload.pricing
             state.bookingTitle = action.payload.title
-            // setBookingDetailsFromLocalStorage(state)
+            state.pref = action.payload.preference
         },
         settingBookingResponse: (state, action) => {
             state.bookingResponse = ""
@@ -275,7 +311,8 @@ export const {
     setPreference,
     generalCountDecrease,
     generalCountIncrease,
-    generalTotalAmount
+    generalTotalAmount,
+    setPreferenceOption
 } = bookingSlice.actions
 
 export default bookingSlice.reducer

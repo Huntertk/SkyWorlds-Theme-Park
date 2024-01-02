@@ -1,75 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import imgCelestial from './assets/images/Celestial.avif'
-import imgSkyHigh from './assets/images/SkyHigh.avif'
-import lunchBuffet from './assets/images/LunchBuffet.avif'
-import dinnerBuffet from './assets/images/DinnerBuffet.avif'
-import teaBuffet from './assets/images/TeaBuffet.avif'
-import imgTen from './assets/images/IMGTEN.jpg'
-import imgEleven from './assets/images/IMGELEVEN.jpg'
-import imgFifteen from './assets/images/IMGFIFITEEN.jpg'
 
-//First
-
-import outdoorThemeParkImgOne from './assets/images/outdoorThemeParkImgOne.avif'
-import outdoorThemeParkImgTwo from './assets/images/outdoorThemeParkImgTwo.avif'
-import outdoorThemeParkImgThree from './assets/images/outdoorThemeParkImgThree.avif'
-import outdoorThemeParkImgFour from './assets/images/outdoorThemeParkImgFour.avif'
-import outdoorThemeParkImgFive from './assets/images/outdoorThemeParkImgFive.avif'
-import outdoorThemeParkImgSix from './assets/images/outdoorThemeParkImgSix.avif'
-import outdoorThemeParkImgSeven from './assets/images/outdoorThemeParkImgSeven.avif'
-
-//Second
-import gentingAwanaskyWayImgOne from './assets/images/gentingAwanaskyWayImgOne.avif'
-import gentingAwanaskyWayImgTwo from './assets/images/gentingAwanaskyWayImgTwo.avif'
-import gentingAwanaskyWayImgThree from './assets/images/gentingAwanaskyWayImgThree.avif'
-import gentingAwanaskyWayImgFour from './assets/images/gentingAwanaskyWayImgFour.avif'
-import gentingAwanaskyWayImgFive from './assets/images/gentingAwanaskyWayImgFive.avif'
-import gentingAwanaskyWayImgSix from './assets/images/gentingAwanaskyWayImgSix.avif'
-import gentingAwanaskyWayImgSeven from './assets/images/gentingAwanaskyWayImgSeven.avif'
-import gentingAwanaskyWayImgEight from './assets/images/gentingAwanaskyWayImgEight.avif'
-import gentingAwanaskyWayImgNine from './assets/images/gentingAwanaskyWayImgNine.avif'
-import gentingAwanaskyWayImgTen from './assets/images/gentingAwanaskyWayImgTen.avif'
-
-//Third
-import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgOne from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgOne.avif'
-import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgTwo from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgTwo.avif'
-import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgThree from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgThree.avif'
-import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFour from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFour.avif'
-import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFive from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFive.avif'
-import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSix from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSix.avif'
-import gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSeven from './assets/images/gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSeven.avif'
-
-//Fourth
-import gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgOne from './assets/images/gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgOne.avif'
-import gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgTwo from './assets/images/gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgTwo.avif'
-import gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgThree from './assets/images/gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgThree.avif'
-import gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgFour from './assets/images/gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgFour.avif'
-
-//Fifth
-import gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgOne from './assets/images/gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgOne.avif'
-import gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgTwo from './assets/images/gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgTwo.avif'
-import gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgThree from './assets/images/gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgThree.avif'
-import gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgFour from './assets/images/gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgFour.avif'
-
-//Zones Inside Genting SkyWorlds Theme Park
-import studioPlazaImg from './assets/images/studioPlazaImg.avif'
-import eagleMountainImg from './assets/images/eagleMountainImg.avif'
-import centralParkImg from './assets/images/centralParkImg.avif'
-import andromedaBaseImg from './assets/images/andromedaBaseImg.avif'
-import libertyLaneImg from './assets/images/libertyLaneImg.avif'
-import robotsRevetTownImg from './assets/images/robotsRevetTownImg.avif'
-import rioImg from './assets/images/rioImg.avif'
-import epicImg from './assets/images/epicImg.avif'
-import iceAgeImg from './assets/images/iceAgeImg.avif'
-
-
-//Things To Do Genting SkyWorlds Theme Park
-import ridesAttractions from './assets/images/ridesAttractionsImg.avif'
-import themedAreas from './assets/images/themedAreasImg.avif'
-import gamesActivitiesImg from './assets/images/gamesActivitiesImg.avif'
-import restaurantsImg from './assets/images/restaurantsImg.avif'
-import storesImg from './assets/images/storesImg.avif'
-import photoBoothImg from './assets/images/photoBoothImg.avif'
 
 
 
@@ -78,87 +8,248 @@ export const cardData = [
     {
         id: uuidv4(),
         image:[
-            outdoorThemeParkImgOne,
-            outdoorThemeParkImgTwo,
-            outdoorThemeParkImgThree,
-            outdoorThemeParkImgFour,
-            outdoorThemeParkImgFive,
-            outdoorThemeParkImgSix,
-            outdoorThemeParkImgSeven,
+            "https://i.postimg.cc/xTYkvr9W/Sky-Worlds-2.webp",
+            "https://i.postimg.cc/SsMXrk2p/Sky-Worlds-3.webp",
+            "https://i.postimg.cc/BZ2LPZfT/Skyworld-4.webp",
+            "https://i.postimg.cc/GpZt9VMg/Skyworld-1.webp",
+            "https://i.postimg.cc/9XDsxj5j/outdoor-Theme-Park-Img-Six.jpg",
+            "https://i.postimg.cc/y62ttrs3/outdoor-Theme-Park-Img-Three.jpg",
+            "https://i.postimg.cc/CLDXgHxP/outdoor-Theme-Park-Img-Two.jpg"
 
         ],
         title:"Tickets to Genting SkyWorld Outdoor Theme Park",
         desc:"Make your way to Genting SkyWorlds Theme, an exhilarating adventure spot that features 9 distinct themed worlds and houses 26 thrilling rides and attractions.",
         type:"bookTypeOne",
-        price: 151,
+        preference: {
+            offPeak:[
+                {
+                    title:"1 Day Pass Off Peak",
+                    price:{
+                        adult:130,
+                        child:110,
+                        senior:110
+                    },
+                    details:["1-day admission to Genting SkyWorlds Theme Park"]
+                },
+                {
+                    title:"Combo: 1-Day Pass + Two-way Standard Gondola Ride Off Peak",
+                    price:{
+                        adult:151,
+                        child:121,
+                        senior:121
+                    },
+                    details:[
+                        "Access to Genting Awana SkyWay standard gondola", 
+                        "Two-way ride",
+                        "1-day admission to Genting SkyWorlds Theme Park"
+                    ]
+                },
+                {
+                    title:"Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak",
+                    price:{
+                        adult:185,
+                        child:160,
+                        senior:160
+                    },
+                    details:[
+                        "Admission to Genting Skytropolis",
+                        "Admission to Genting SkyWorlds",
+                        "Complimentary up to 6 VQ reservations"
+                    ]
+                },
+            ],
+            Peak:[
+                {
+                    title:"1 Day Pass Peak",
+                    price:{
+                        adult:156,
+                        child:128,
+                        senior:128
+                    }, 
+                    details:["1-day admission to Genting SkyWorlds Theme Park"]
+                },
+                {
+                    title:"Combo: 1-Day Pass + Two-way Standard Gondola Ride Peak",
+                    price:{
+                        adult:179,
+                        child:151,
+                        senior:151
+                    },
+                    details:[
+                        "Access to Genting Awana SkyWay standard gondola", 
+                        "Two-way ride",
+                        "1-day admission to Genting SkyWorlds Theme Park"
+                    ]
+                },
+                {
+                    title:"Combo: Skyworlds Themepark + Skytropolis Themepark Peak",
+                    price:{
+                        adult:221,
+                        child:195,
+                        senior:195
+                    },
+                    details:[
+                        "Admission to Genting Skytropolis",
+                        "Admission to Genting SkyWorlds",
+                        "Complimentary up to 6 VQ reservations"
+                    ]
+                },
+            ]
+        },
 
     },
     {
         id: uuidv4(),
         image:[
-            gentingAwanaskyWayImgOne,
-            gentingAwanaskyWayImgTwo,
-            gentingAwanaskyWayImgThree,
-            gentingAwanaskyWayImgFour,
-            gentingAwanaskyWayImgFive,
-            gentingAwanaskyWayImgSix,
-            gentingAwanaskyWayImgSeven,
-            gentingAwanaskyWayImgEight,
-            gentingAwanaskyWayImgNine,
-            gentingAwanaskyWayImgTen,
+            "https://i.postimg.cc/JnZnXxvr/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-1.jpg",
+            "https://i.postimg.cc/fysbfXQx/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-2.jpg\nhttps://i.postimg.cc/fysbfXQx/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-2.jpg",
+            "https://i.postimg.cc/rFJDghmz/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-3.jpg\nhttps://i.postimg.cc/rFJDghmz/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-3.jpg",
+            "https://i.postimg.cc/0yXb1b7s/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-4.jpg",
+            "https://i.postimg.cc/1zg4msKN/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-5.jpg",
+            "https://i.postimg.cc/7ZZfRgG9/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-6.jpg",
+            "https://i.postimg.cc/KjpV8Jgw/genting-Awanasky-Way-Img-Six.jpg",
+            "https://i.postimg.cc/XvKzCVCw/genting-Awanasky-Way-Img-Ten.jpg",
+            "https://i.postimg.cc/NfVShCtr/genting-Awanasky-Way-Img-Three.jpg",
+            "https://i.postimg.cc/kgbZ7NMY/genting-Awanasky-Way-Img-Two.jpg"
 
         ],
         title:"Combo: Genting Awana SkyWay (One-way) + Skytropolis Indoor Theme Park Tickets",
         desc:"Non-stop excitement awaits as you explore the Awana SkyWay and the Skytropolis Indoor Theme Park with this money-saver combo ticket.",
         type:"bookTypeTwo",
-        price: 75
+        price: {
+            general:75
+        }
     },
     {
         id: uuidv4(),
       image:[
-        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgOne,
-        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgTwo,
-        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgThree,
-        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFour,
-        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgFive,
-        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSix,
-        gentingSkyWorldsThemeParkSkytropolisIndoorThemeParkImgSeven,
+        "https://i.postimg.cc/KYgTVRFs/Skytropolis-1.jpg",
+        "https://i.postimg.cc/L8WfNzd1/Skytropolis-2.jpg",
+        "https://i.postimg.cc/c4XftpXT/Skytropolis-3.jpg",
+        "https://i.postimg.cc/bY0xpDn7/Skytropolis-4.jpg",
+        "https://i.postimg.cc/4NJzdfbm/Skytropolis-5.jpg",
+        "https://i.postimg.cc/rsT55cBZ/Skytropolis-6.jpg"
         ],
         title:"Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
         desc:"Experience thrill, adventure, family fun, and more with these budget-friendly combo tickets to Genting Skytropolis and Skyworlds Theme Park.",
         type:"bookTypeThree",
-        price: 215
+        price: {
+            adult:215,
+            child:190,
+            senior:190,
+        }
     },
     {
         id: uuidv4(),
         image:[
-            gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgOne,
-            gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgTwo,
-            gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgThree,
-            gentingAwanaSkyWayOnewaySkyworldOutdoorThemeParkTicketsImgFour,
+            "https://i.postimg.cc/xTYkvr9W/Sky-Worlds-2.webp",
+        "https://i.postimg.cc/JnZnXxvr/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-1.jpg",
+        "https://i.postimg.cc/1zg4msKN/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-5.jpg",
+        "https://i.postimg.cc/0yXb1b7s/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-4.jpg"
         ],
         title:"Combo: Genting Awana SkyWay (One-way) + Skyworld Outdoor Theme Park Tickets",
         desc:"Experience thrill, adventure, family fun, and more with these budget-friendly combo tickets to Genting Skytropolis and Skyworlds Theme Park.",
         type:"bookTypeFour",
-        price: 166
+        preference:{
+            offPeak:[
+                {
+                    title:"Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Off Peak",
+                    price:{
+                        adult:136,
+                        child:110,
+                        senior:110
+                    } 
+                },
+            ],
+            Peak:[
+                {
+                    title:"Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Peak",
+                    price:{
+                        adult:171,
+                        child:141,
+                        senior:141
+                    } 
+                },
+            ]
+        },
     },
     {
         id: uuidv4(),
         image:[
-            gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgOne,
-            gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgTwo,
-            gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgThree,
-            gentingAwanaSkywayOnewaySkyworldOutdoorSkytropolisIndoorThemeParkImgFour
+            "https://i.postimg.cc/rsT55cBZ/Skytropolis-6.jpg",
+            "https://i.postimg.cc/FHz3yT6v/Skytropolis-7.jpg",
+            "https://i.postimg.cc/hGHLPVpB/Skytropolis-8.jpg",
+            "https://i.postimg.cc/HxXQJjh7/Skytropolis-9.jpg",
+            "https://i.postimg.cc/SsMXrk2p/Sky-Worlds-3.webp",
+            "https://i.postimg.cc/GpZt9VMg/Skyworld-1.webp"
         ],
         title:"Combo: Genting Awana Skyway (One-way) + Skyworld Outdoor + Skytropolis Indoor Theme Park ",
-        desc:"Upgrade your Kuala Lumpur trip with this super saver combo that gives you access to the city’s top attractions.",
+        desc:"Upgrade your Kuala Lumpur trip with this super saver combo that gives you access to the city's top attractions.",
         type:"bookTypeFive",
-        price: 225
+        preference:{
+            offPeak:[
+                {
+                    title:"Combo: Genting Awana Skyway (One-way) + Skyworld Outdoor + Skytropolis Indoor Theme Park Off Peak",
+                    price:{
+                        adult:199,
+                        child:169,
+                        senior:169
+                    } 
+                },
+            ],
+            Peak:[
+                {
+                    title:"Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Peak",
+                    price:{
+                        adult:221,
+                        child:197,
+                        senior:197
+                    } 
+                },
+            ]
+        },
     },
     
 ]
 
-
+export const preferenceData = [
+    
+    {
+        id: uuidv4(),
+        title: "Combo: 1-Day Pass + Two-Way Standard Gondola Ride",
+        price: 171,
+        details:[
+            "Access to Genting Awana SkyWay standard gondola", 
+            "Two-way ride",
+            "1-day admission to Genting SkyWorlds Theme Park"
+        ]
+    },
+    {
+        id: uuidv4(),
+        title: "1-Day Pass Off  Peak",
+        price: 130,
+        details:["1-day admission to Genting SkyWorlds Theme Park"]
+    },
+    // {
+    //     id: uuidv4(),
+    //     title: "1-Day Pass with Photo",
+    //     price: 179,
+    //     details:[
+    //         "Photo opportunity",
+    //         "1-day admission to Genting SkyWorlds Theme Park"
+    //     ]
+    // },
+    {
+        id: uuidv4(),
+        title: "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
+        price: 215,
+        details:[
+            "Admission to Genting Skytropolis",
+            "Admission to Genting SkyWorlds",
+            "Complimentary up to 6 VQ reservations"
+        ]
+    }
+]
 
 
 
@@ -262,44 +353,7 @@ export const thingsTodo = [
 ]
 
 
-export const preferenceData = [
-    
-    {
-        id: uuidv4(),
-        title: "Combo: 1-Day Pass + Two-Way Standard Gondola Ride",
-        price: 171,
-        details:[
-            "Access to Genting Awana SkyWay standard gondola", 
-            "Two-way ride",
-            "1-day admission to Genting SkyWorlds Theme Park"
-        ]
-    },
-    {
-        id: uuidv4(),
-        title: "1-Day Pass",
-        price: 151,
-        details:["1-day admission to Genting SkyWorlds Theme Park"]
-    },
-    {
-        id: uuidv4(),
-        title: "1-Day Pass with Photo",
-        price: 179,
-        details:[
-            "Photo opportunity",
-            "1-day admission to Genting SkyWorlds Theme Park"
-        ]
-    },
-    {
-        id: uuidv4(),
-        title: "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
-        price: 215,
-        details:[
-            "Admission to Genting Skytropolis",
-            "Admission to Genting SkyWorlds",
-            "Complimentary up to 6 VQ reservations"
-        ]
-    }
-]
+
 
 
 
@@ -373,20 +427,14 @@ export const addQues = [
         id: uuidv4(),
         ques:"Operating Hours ?",
         ans:[
-            "Skyworld : 11am-6pm, Everyday(Closed every Tuesday except ", 
+            "Skyworld : 11am - 6pm, Everyday(Closed every Tuesday except Public Holiday)", 
+            "Skytropolis : 2pm - 9pm, Mon - Thu | 2pm - 10pm, Fri - Sun", 
+            "Awana Skyway : 7am - 11pm everyday",
         ]
     },
     {
         id: uuidv4(),
-        ques:"Public/School Holiday",
-        ans:[
-            "Skytropolis: 2pm-9pm, Mon-Thu | 2pm-10pm, Fri-Sun", 
-            "Awana Skyway: 7am-11pm everyday", 
-        ]
-    },
-    {
-        id: uuidv4(),
-        ques:"For Your Concern",
+        ques:"Child Policy",
         ans:[
             "Adult age: 13 to 59 years old.",
             "Child height more than 110cm, need to purchase Adult Ticket.",
@@ -487,4 +535,25 @@ export const termsandconditiondata = [
         title: "Arbitration",
         list:["Any legal controversy will be settled by binding arbitration. Each party bears one-half of arbitration fees."]
     },
+]
+
+
+export const publicHoliDayDate = [
+    // "Tue Dec 19 2023 00:00:00 GMT+0800 (Malaysia Time)",
+    "Sun Feb 11 2024",
+    "Wed Apr 10 2024",
+    "Thu Apr 11 2024",
+    "Wed May 01 2024",
+    "Wed May 22 2024",
+    "Sun Jun 02 2024",
+    "Mon Jun 03 2024",
+    "Sun Jun 16 2024",
+    "Mon Jun 17 2024",
+    "Sun Jul 07 2024",
+    "Sun Sep 15 2024",
+    "Mon Sep 16 2024",
+    "Wed Oct 30 2024",
+    "Thu Oct 31 2024",
+    "Wed Dec 25 2024"
+
 ]

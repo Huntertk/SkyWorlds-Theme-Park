@@ -1,0 +1,202 @@
+[
+    {
+        "image": [
+            "https://i.postimg.cc/xTYkvr9W/Sky-Worlds-2.webp",
+            "https://i.postimg.cc/SsMXrk2p/Sky-Worlds-3.webp",
+            "https://i.postimg.cc/BZ2LPZfT/Skyworld-4.webp",
+            "https://i.postimg.cc/GpZt9VMg/Skyworld-1.webp",
+            "https://i.postimg.cc/9XDsxj5j/outdoor-Theme-Park-Img-Six.jpg",
+            "https://i.postimg.cc/y62ttrs3/outdoor-Theme-Park-Img-Three.jpg",
+            "https://i.postimg.cc/CLDXgHxP/outdoor-Theme-Park-Img-Two.jpg"
+        ],
+        "title": "Tickets to Genting SkyWorld Outdoor Theme Park",
+        "desc": "Make your way to Genting SkyWorlds Theme, an exhilarating adventure spot that features 9 distinct themed worlds and houses 26 thrilling rides and attractions.",
+        "type": "bookTypeOne",
+        "preference": {
+            "offPeak": [
+                {
+                    "title": "1 Day Pass Off Peak",
+                    "price": {
+                        "adult": 130,
+                        "child": 110,
+                        "senior": 110
+                    },
+                    "details": [
+                        "1-day admission to Genting SkyWorlds Theme Park"
+                    ]
+                },
+                {
+                    "title": "Combo: 1-Day Pass + Two-way Standard Gondola Ride Off Peak",
+                    "price": {
+                        "adult": 151,
+                        "child": 121,
+                        "senior": 121
+                    },
+                    "details": [
+                        "Access to Genting Awana SkyWay standard gondola",
+                        "Two-way ride",
+                        "1-day admission to Genting SkyWorlds Theme Park"
+                    ]
+                },
+                {
+                    "title": "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak",
+                    "price": {
+                        "adult": 185,
+                        "child": 160,
+                        "senior": 160
+                    },
+                    "details": [
+                        "Admission to Genting Skytropolis",
+                        "Admission to Genting SkyWorlds",
+                        "Complimentary up to 6 VQ reservations"
+                    ]
+                }
+            ],
+            "Peak": [
+                {
+                    "title": "1 Day Pass Peak",
+                    "price": {
+                        "adult": 156,
+                        "child": 128,
+                        "senior": 128
+                    },
+                    "details": [
+                        "1-day admission to Genting SkyWorlds Theme Park"
+                    ]
+                },
+                {
+                    "title": "Combo: 1-Day Pass + Two-way Standard Gondola Ride Peak",
+                    "price": {
+                        "adult": 179,
+                        "child": 151,
+                        "senior": 151
+                    },
+                    "details": [
+                        "Access to Genting Awana SkyWay standard gondola",
+                        "Two-way ride",
+                        "1-day admission to Genting SkyWorlds Theme Park"
+                    ]
+                },
+                {
+                    "title": "Combo: Skyworlds Themepark + Skytropolis Themepark Peak",
+                    "price": {
+                        "adult": 221,
+                        "child": 195,
+                        "senior": 195
+                    },
+                    "details": [
+                        "Admission to Genting Skytropolis",
+                        "Admission to Genting SkyWorlds",
+                        "Complimentary up to 6 VQ reservations"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "image": [
+            "https://i.postimg.cc/JnZnXxvr/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-1.jpg",
+            "https://i.postimg.cc/fysbfXQx/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-2.jpg\nhttps://i.postimg.cc/fysbfXQx/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-2.jpg",
+            "https://i.postimg.cc/rFJDghmz/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-3.jpg\nhttps://i.postimg.cc/rFJDghmz/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-3.jpg",
+            "https://i.postimg.cc/0yXb1b7s/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-4.jpg",
+            "https://i.postimg.cc/1zg4msKN/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-5.jpg",
+            "https://i.postimg.cc/7ZZfRgG9/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-6.jpg",
+            "https://i.postimg.cc/KjpV8Jgw/genting-Awanasky-Way-Img-Six.jpg",
+            "https://i.postimg.cc/XvKzCVCw/genting-Awanasky-Way-Img-Ten.jpg",
+            "https://i.postimg.cc/NfVShCtr/genting-Awanasky-Way-Img-Three.jpg",
+            "https://i.postimg.cc/kgbZ7NMY/genting-Awanasky-Way-Img-Two.jpg"
+        ],
+        "title": "Combo: Genting Awana SkyWay (One-way) + Skytropolis Indoor Theme Park Tickets",
+        "desc": "Non-stop excitement awaits as you explore the Awana SkyWay and the Skytropolis Indoor Theme Park with this money-saver combo ticket.",
+        "type": "bookTypeTwo",
+        "price": {
+            "general": 75
+        }
+    },
+    {
+        "image": [
+            "https://i.postimg.cc/KYgTVRFs/Skytropolis-1.jpg",
+            "https://i.postimg.cc/L8WfNzd1/Skytropolis-2.jpg",
+            "https://i.postimg.cc/c4XftpXT/Skytropolis-3.jpg",
+            "https://i.postimg.cc/bY0xpDn7/Skytropolis-4.jpg",
+            "https://i.postimg.cc/4NJzdfbm/Skytropolis-5.jpg",
+            "https://i.postimg.cc/rsT55cBZ/Skytropolis-6.jpg"
+        ],
+        "title": "Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
+        "desc": "Experience thrill, adventure, family fun, and more with these budget-friendly combo tickets to Genting Skytropolis and Skyworlds Theme Park.",
+        "type": "bookTypeThree",
+        "price": {
+            "adult": 215,
+            "child": 190,
+            "senior": 190
+        }
+    },
+    {
+        "image": [
+            "https://i.postimg.cc/xTYkvr9W/Sky-Worlds-2.webp",
+            "https://i.postimg.cc/JnZnXxvr/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-1.jpg",
+            "https://i.postimg.cc/1zg4msKN/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-5.jpg",
+            "https://i.postimg.cc/0yXb1b7s/Awana-Sky-Way-Gondola-Cable-Car-in-Genting-Highlands-4.jpg"
+        ],
+        "title": "Combo: Genting Awana SkyWay (One-way) + Skyworld Outdoor Theme Park Tickets",
+        "desc": "Experience thrill, adventure, family fun, and more with these budget-friendly combo tickets to Genting Skytropolis and Skyworlds Theme Park.",
+        "type": "bookTypeFour",
+        "preference": {
+            "offPeak": [
+                {
+                    "title": "Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Off Peak",
+                    "price": {
+                        "adult": 136,
+                        "child": 110,
+                        "senior": 110
+                    }
+                }
+            ],
+            "Peak": [
+                {
+                    "title": "Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Peak",
+                    "price": {
+                        "adult": 171,
+                        "child": 141,
+                        "senior": 141
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "image": [
+            "https://i.postimg.cc/rsT55cBZ/Skytropolis-6.jpg",
+            "https://i.postimg.cc/FHz3yT6v/Skytropolis-7.jpg",
+            "https://i.postimg.cc/hGHLPVpB/Skytropolis-8.jpg",
+            "https://i.postimg.cc/HxXQJjh7/Skytropolis-9.jpg",
+            "https://i.postimg.cc/SsMXrk2p/Sky-Worlds-3.webp",
+            "https://i.postimg.cc/GpZt9VMg/Skyworld-1.webp"
+        ],
+        "title": "Combo: Genting Awana Skyway (One-way) + Skyworld Outdoor + Skytropolis Indoor Theme Park ",
+        "desc": "Upgrade your Kuala Lumpur trip with this super saver combo that gives you access to the city's top attractions.",
+        "type": "bookTypeFive",
+        "preference": {
+            "offPeak": [
+                {
+                    "title": "Combo: Genting Awana Skyway (One-way) + Skyworld Outdoor + Skytropolis Indoor Theme Park Off Peak",
+                    "price": {
+                        "adult": 199,
+                        "child": 169,
+                        "senior": 169
+                    }
+                }
+            ],
+            "Peak": [
+                {
+                    "title": "Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Peak",
+                    "price": {
+                        "adult": 221,
+                        "child": 197,
+                        "senior": 197
+                    }
+                }
+            ]
+        }
+    }
+]
