@@ -29,7 +29,6 @@ const HomeCardContainer = () => {
   if(!cardData){
     return <LoadingSpinner />
   }
-  console.log(cardData);
   return (
     <section className='HomeCardMainContainer'>
         {cardData.map((data) => {

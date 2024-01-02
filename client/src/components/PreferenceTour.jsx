@@ -21,7 +21,7 @@ const CardData = ({data}) => {
         </div>
         <ul>
             {
-                data.details.map((d, index) => (
+                data?.details?.map((d, index) => (
                     <li key={index}>{d}</li>
                 ))
             }

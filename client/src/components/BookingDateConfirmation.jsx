@@ -197,36 +197,76 @@ const BookingDateConfirmation = () => {
             disabled={disabledDays}
             />
             </div>
-            {
-                selectedDate && type === 'bookTypeOne' && <PreferenceTour selectedDate={selectedDate}/> 
-            }
+            <>
+                {selectedDate && type === 'bookTypeOne' &&  <PreferenceTour selectedDate={selectedDate}/>} 
+                {selectedDate && type === 'bookTypeFour' &&  <PreferenceTour selectedDate={selectedDate}/>} 
+                {selectedDate && type === 'bookTypeFive' &&  <PreferenceTour selectedDate={selectedDate}/>} 
+            </>
+            
             {/* <PreferenceTour /> */}
             <div className="selectedDate">
                 {
                     selectedDate ? <>
                     <div className='prefrenceAndDateContainer'>
-                        {/* <p>{
+                        <p>{
                             type === 'bookTypeOne' && pref ? pref : 
                             type === 'bookTypeTwo' ? "Combo: Genting Awana SkyWay (One-way) + Skytropolis Indoor Theme Park Tickets" : 
                             type === 'bookTypeThree' ? "Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets" : 
-                            type === 'bookTypeFour' ? "Combo: Genting Awana SkyWay (One-way) + Skyworld Outdoor Theme Park Tickets" : 
-                            type === 'bookTypeFive' && "Combo: Genting Awana Skyway (One-way) + Skyworld Outdoor + Skytropolis Indoor Theme Park"
-                        }</p> */}
-                    <p>You selected {format(selectedDate, 'PPP')}.</p>
+                            type === 'bookTypeFour'  && pref ? pref : 
+                            type === 'bookTypeFive' && pref 
+                        }</p>
+                    <p>You selected {format(selectedDate, 'PPP')}</p>
                     </div>
+                   {
+                    type === 'bookTypeOne' && pref && <button onClick={() => {
+                            dispatch(setBookingDate({selectedBookingDate:format(selectedDate, 'PPP'), selectedDay: selectedDate.toString()}))
+                            dispatch(openPaxModel())
+                            setCalenderOpen(false)
+                        }}>Next</button>
+                    }
                     {
-                        type !== 'bookTypeOne' ?
+                       type === 'bookTypeTwo' &&
+                        <button onClick={() => {
+                            dispatch(setBookingDate({selectedBookingDate:format(selectedDate, 'PPP'), selectedDay: selectedDate.toString()}))
+                            dispatch(openPaxModel())
+                            setCalenderOpen(false)
+                        }}>Next</button>
+                    }
+                    {
+                       type === 'bookTypeThree' &&
+                        <button onClick={() => {
+                            dispatch(setBookingDate({selectedBookingDate:format(selectedDate, 'PPP'), selectedDay: selectedDate.toString()}))
+                            dispatch(openPaxModel())
+                            setCalenderOpen(false)
+                        }}>Next</button>
+                    }
+                    {
+                    type === 'bookTypeFour' && pref && <button onClick={() => {
+                            dispatch(setBookingDate({selectedBookingDate:format(selectedDate, 'PPP'), selectedDay: selectedDate.toString()}))
+                            dispatch(openPaxModel())
+                            setCalenderOpen(false)
+                        }}>Next</button>
+                    }
+                     {
+                    type === 'bookTypeFive' && pref && <button onClick={() => {
+                            dispatch(setBookingDate({selectedBookingDate:format(selectedDate, 'PPP'), selectedDay: selectedDate.toString()}))
+                            dispatch(openPaxModel())
+                            setCalenderOpen(false)
+                        }}>Next</button>
+                    }
+                    {/* {
+                       type !== 'bookTypeFour' ?
                         <button onClick={() => {
                             dispatch(setBookingDate({selectedBookingDate:format(selectedDate, 'PPP'), selectedDay: selectedDate.toString()}))
                             dispatch(openPaxModel())
                             setCalenderOpen(false)
                         }}>Next</button> : 
-                        type === 'bookTypeOne' && pref ? <button onClick={() => {
+                        type === 'bookTypeFour' && pref ? <button onClick={() => {
                             dispatch(setBookingDate({selectedBookingDate:format(selectedDate, 'PPP'), selectedDay: selectedDate.toString()}))
                             dispatch(openPaxModel())
                             setCalenderOpen(false)
-                        }}>Next</button> : <></>
-                    }
+                        }}>Next</button>:<></>
+                    } */}
                     </> : <p>Select One Date</p>
                 }
             </div>
