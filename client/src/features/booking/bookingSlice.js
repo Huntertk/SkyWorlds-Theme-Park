@@ -97,12 +97,12 @@ const bookingSlice = createSlice({
                     //     state.adultTotal = state.adultCount *  179
                     //    return 
                     // } 
-                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak"
+                    else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets Off Peak"
                     ) {
                         state.adultTotal = state.adultCount *  state.prefrenceOpt.offPeak[2].price.adult
                    return 
                 }
-                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Peak"
+                    else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets Peak"
                     ) {
                         state.adultTotal = state.adultCount *  state.prefrenceOpt.Peak[2].price.adult
                    return 
@@ -162,12 +162,12 @@ const bookingSlice = createSlice({
                     //     state.adultTotal = state.adultCount *  179
                     //    return 
                     // } 
-                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak"
+                    else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets Off Peak"
                     ) {
                         state.childTotal = state.childCount *  state.prefrenceOpt.offPeak[2].price.child
                    return 
                 }
-                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Peak"
+                    else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets Peak"
                     ) {
                         state.childTotal = state.childCount *  state.prefrenceOpt.Peak[2].price.child
                    return 
@@ -227,12 +227,12 @@ const bookingSlice = createSlice({
                     //     state.adultTotal = state.adultCount *  179
                     //    return 
                     // } 
-                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak"
+                    else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets Off Peak"
                     ) {
                         state.seniorTotal = state.seniorCount *  state.prefrenceOpt.offPeak[2].price.senior
                    return 
                 }
-                    else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Peak"
+                    else if(state.pref === "Combo: Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets Peak"
                     ) {
                         state.seniorTotal = state.seniorCount *  state.prefrenceOpt.Peak[2].price.senior
                    return 
