@@ -108,16 +108,34 @@ const bookingSlice = createSlice({
                    return 
                 } //Third
             } else if(state.type === 'bookTypeThree'){
-                state.adultTotal = state.adultCount *  215
-                return 
+                if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak"){
+
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.offPeak[0].price.adult
+
+                } else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Peak"){
+
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.Peak[0].price.adult
+                }
             } else if(state.type === 'bookTypeFour'){
                 //Fourth
-                state.adultTotal = state.adultCount *  166
-                return
+                if(state.pref === "Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Off Peak"){
+
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.offPeak[0].price.adult
+
+                } else if(state.pref === "Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Peak"){
+
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.Peak[0].price.adult
+                }
             } else if(state.type === 'bookTypeFive'){
                 //Fifth
-                state.adultTotal = state.adultCount *  225
-                return
+                if(state.pref === "Combo: Awana Skyway(One way) + Skyworld + Skytropolis Off Peak"){
+
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.offPeak[0].price.adult
+
+                } else if(state.pref === "Combo: Awana Skyway(One way) + Skyworld + Skytropolis Peak"){
+
+                    state.adultTotal = state.adultCount *  state.prefrenceOpt.Peak[0].price.adult
+                }
             }
         },
         childTotalAmount: (state) => {
@@ -155,16 +173,34 @@ const bookingSlice = createSlice({
                    return 
                 } //Third
             }  else if(state.type === 'bookTypeThree'){
-                state.childTotal = state.childCount *  190
-                return 
+                if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak"){
+
+                    state.childTotal = state.childCount *  state.prefrenceOpt.offPeak[0].price.child
+
+                } else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Peak"){
+
+                    state.childTotal = state.childCount *  state.prefrenceOpt.Peak[0].price.child
+                }
             } else if(state.type === 'bookTypeFour'){
                 //Fourth
-                state.childTotal = state.childCount *  136
-                return
+                if(state.pref === "Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Off Peak"){
+
+                    state.childTotal = state.childCount *  state.prefrenceOpt.offPeak[0].price.child
+
+                } else if(state.pref === "Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Peak"){
+
+                    state.childTotal = state.childCount*  state.prefrenceOpt.Peak[0].price.child
+                }
             } else if(state.type === 'bookTypeFive'){
                 //Fifth
-                state.childTotal = state.childCount *  200
-                return
+                if(state.pref === "Combo: Awana Skyway(One way) + Skyworld + Skytropolis Off Peak"){
+
+                    state.childTotal = state.childCount *  state.prefrenceOpt.offPeak[0].price.child
+
+                } else if(state.pref === "Combo: Awana Skyway(One way) + Skyworld + Skytropolis Peak"){
+
+                    state.childTotal = state.childCount *  state.prefrenceOpt.Peak[0].price.child
+                }
             }
         },
         seniorTotalAmount: (state) => {
@@ -202,16 +238,34 @@ const bookingSlice = createSlice({
                    return 
                 } //Third
             }  else if(state.type === 'bookTypeThree'){
-                state.seniorTotal = state.seniorCount *  190
-                return 
+                if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak"){
+
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.offPeak[0].price.senior
+
+                } else if(state.pref === "Combo: Skyworlds Themepark + Skytropolis Themepark Peak"){
+
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.Peak[0].price.senior
+                }
             } else if(state.type === 'bookTypeFour'){
                 //Fourth
-                state.seniorTotal = state.seniorCount *  136
-                return
+                if(state.pref === "Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Off Peak"){
+
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.offPeak[0].price.senior
+
+                } else if(state.pref === "Combo: Awana Skyway(One-way) + Skyworld Outdoor Themepark Peak"){
+
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.Peak[0].price.senior
+                }
             } else if(state.type === 'bookTypeFive'){
                 //Fifth
-                state.seniorTotal = state.seniorCount *  200
-                return
+                if(state.pref === "Combo: Awana Skyway(One way) + Skyworld + Skytropolis Off Peak"){
+
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.offPeak[0].price.senior
+
+                } else if(state.pref === "Combo: Awana Skyway(One way) + Skyworld + Skytropolis Peak"){
+
+                    state.seniorTotal = state.seniorCount *  state.prefrenceOpt.Peak[0].price.senior
+                }
             }
         },
 

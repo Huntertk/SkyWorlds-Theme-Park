@@ -125,10 +125,27 @@
         "title": "Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets",
         "desc": "Experience thrill, adventure, family fun, and more with these budget-friendly combo tickets to Genting Skytropolis and Skyworlds Theme Park.",
         "type": "bookTypeThree",
-        "price": {
-            "adult": 215,
-            "child": 190,
-            "senior": 190
+        "preference":{
+            "offPeak":[
+                {
+                    "title":"Combo: Skyworlds Themepark + Skytropolis Themepark Off Peak",
+                    "price":{
+                        "adult":185,
+                        "child":160,
+                        "senior":160
+                    } 
+                }
+            ],
+            "Peak":[
+                {
+                    "title":"Combo: Skyworlds Themepark + Skytropolis Themepark Peak",
+                    "price":{
+                        "adult":221,
+                        "child":195,
+                        "senior":195
+                    } 
+                }
+            ]
         }
     },
     {
@@ -200,3 +217,4 @@
         }
     }
 ]
+

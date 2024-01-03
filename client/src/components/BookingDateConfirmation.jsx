@@ -199,6 +199,7 @@ const BookingDateConfirmation = () => {
             </div>
             <>
                 {selectedDate && type === 'bookTypeOne' &&  <PreferenceTour selectedDate={selectedDate}/>} 
+                {selectedDate && type === 'bookTypeThree' &&  <PreferenceTour selectedDate={selectedDate}/>}
                 {selectedDate && type === 'bookTypeFour' &&  <PreferenceTour selectedDate={selectedDate}/>} 
                 {selectedDate && type === 'bookTypeFive' &&  <PreferenceTour selectedDate={selectedDate}/>} 
             </>
@@ -211,7 +212,7 @@ const BookingDateConfirmation = () => {
                         <p>{
                             type === 'bookTypeOne' && pref ? pref : 
                             type === 'bookTypeTwo' ? "Combo: Genting Awana SkyWay (One-way) + Skytropolis Indoor Theme Park Tickets" : 
-                            type === 'bookTypeThree' ? "Combo : Genting SkyWorlds Theme Park + Skytropolis Indoor Theme Park Tickets" : 
+                            type === 'bookTypeThree' && pref ? pref : 
                             type === 'bookTypeFour'  && pref ? pref : 
                             type === 'bookTypeFive' && pref 
                         }</p>
@@ -233,7 +234,7 @@ const BookingDateConfirmation = () => {
                         }}>Next</button>
                     }
                     {
-                       type === 'bookTypeThree' &&
+                       type === 'bookTypeThree' && pref &&
                         <button onClick={() => {
                             dispatch(setBookingDate({selectedBookingDate:format(selectedDate, 'PPP'), selectedDay: selectedDate.toString()}))
                             dispatch(openPaxModel())
