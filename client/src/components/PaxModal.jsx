@@ -93,7 +93,7 @@ const PaxModal = ({selectedDate}) => {
                 return navigate("/")
             }}>Cancel</button>
         </div>
-        <p className='bookingType'>{bookingTitle}</p>
+        {type === 'bookTypeTwo' && <p className='bookingType'>{bookingTitle}</p>}
         {pref && <p className='bookingType'>{pref}</p>}
         <h1>Select number of tickets</h1>
         <div className="paxSelector">

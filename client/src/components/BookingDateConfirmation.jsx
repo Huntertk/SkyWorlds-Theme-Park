@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import '../styles/bookingDateConfirmation.scss'
 import 'react-day-picker/dist/style.css';
 import './day-picker.css';
@@ -24,7 +24,7 @@ function OnlyFutureRow(props) {
 }
 
 const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, disabledDates}) => {
-
+    const btnRef = useRef(null)
     const disabledBtnToDate = (btnDate) => {
         const settingHourToZero = disabledDates?.map(d => d.setHours(0,0,0,0))
         const findingDate = settingHourToZero?.find(d => d === new Date(Date.now() + btnDate).setHours(0,0,0,0))
@@ -37,6 +37,12 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
     }
     const day = new Date().getDay()
     const date = new Date(Date.now()).getDate()
+    const focusBtn = () => {
+        btnRef.current.focus()
+    }
+    useEffect(() => {
+        focusBtn()
+    },[])
     return (
         <div className="dateBtnContainer">
            <button className={selectedDate?.toString() == new Date(Date.now())  ? "active" : ""}
@@ -86,7 +92,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
             {getDayName(new Date(Date.now() + 1000 * 60 *60 * 24 * 4))}
             </span>
             </button>
-           <button className={calenderOpen ? "moreDates active" : "moreDates"} onClick={() => setCalenderOpen(prev => !prev)}>More Dates</button>
+           <button ref={btnRef} className={calenderOpen ? "moreDates active" : "moreDates"} onClick={() => setCalenderOpen(prev => !prev)}>More Dates</button>
         </div>
     )
 }
